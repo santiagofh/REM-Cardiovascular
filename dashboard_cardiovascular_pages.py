@@ -652,6 +652,26 @@ def render_excel_like_page() -> None:
         mime="text/csv",
     )
 
+    st.markdown("### Observaciones importantes")
+    st.warning(
+        "1. **Egresos 2025 (indicadores 18 a 22):** Los datos de egresos hospitalarios 2025 son "
+        "preliminares, ya que la base DEIS aún no cierra el año. Las tasas pueden variar cuando "
+        "se publique el dato definitivo.\n\n"
+        "2. **Indicadores 16 y 17 (ECV):** En 2024 se usó proxy con códigos genéricos "
+        "(`P4190930` y `P4190940`) porque el REM P4 2024 no tenía los códigos específicos por "
+        "condición (IAM y ACV). En 2025 se usan códigos exactos "
+        "(`P4401013+P4401016` y `P4401014+P4401017`), por lo que 2024 y 2025 no son totalmente "
+        "comparables.\n\n"
+        "3. **Indicador 15:** Solo disponible para 2025 porque los códigos REM P4 requeridos "
+        "no estaban en la Serie P 2024.\n\n"
+        "4. **Indicador 12a (tamizaje RD):** No calculado localmente porque la planilla oficial "
+        "usa una lógica de tamizaje distinta a la disponible (`P4190950` = fondo de ojo).\n\n"
+        "5. **Indicador 5 (HEARTS):** No factible desde REM. Requiere fuente externa HEARTS.\n\n"
+        "6. **Denominador:** Los indicadores de cobertura (1, 3, 6, 8) usan población inscrita "
+        "validada FONASA 15+ con prevalencia estimada (HTA 27,6%, DM2 12,3% según ENS). Los "
+        "indicadores 18 a 22 usan la misma PIV como denominador (tasa por 10.000 hab.)."
+    )
+
 
 def render_indicator_table_page() -> None:
     data = load_dashboard_data()
