@@ -1,0 +1,74 @@
+﻿rem,seccion,seccion_nombre,codigo_prestacion,detalle_prestacion,detalle_niveles,fila_excel
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150100,NUMERO DE PERSONAS EN PSCV,NUMERO DE PERSONAS EN PSCV,12
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4190100,Clasificación del Riesgo Cardiovascular - Bajo,Clasificación del Riesgo Cardiovascular - Bajo,13
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150703,Clasificación del Riesgo Cardiovascular - Moderado,Clasificación del Riesgo Cardiovascular - Moderado,14
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150801,Clasificación del Riesgo Cardiovascular - Ato,Clasificación del Riesgo Cardiovascular - Ato,15
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150601,Personas bajo control según patología y factores de riesgo (existencia) - Hipertensión Arterial,Personas bajo control según patología y factores de riesgo (existencia) - Hipertensión Arterial,16
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150602,Personas bajo control según patología y factores de riesgo (existencia) - Diabetes Mellitus tipo 2,Personas bajo control según patología y factores de riesgo (existencia) - Diabetes Mellitus tipo 2,17
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150603,Personas bajo control según patología y factores de riesgo (existencia) - Dislipidemia,Personas bajo control según patología y factores de riesgo (existencia) - Dislipidemia,18
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4150701,Personas bajo control según patología y factores de riesgo (existencia) - Tabaquismo ≥ 55 años,Personas bajo control según patología y factores de riesgo (existencia) - Tabaquismo ≥ 55 años,19
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4190900,Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de Infarto Agudo al Miocardio (IAM),Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de Infarto Agudo al Miocardio (IAM),20
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4190910,Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de Ataque Cerebro Vascular (ACV),Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de Ataque Cerebro Vascular (ACV),21
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4401010,Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de otras Enfermedades Cardiovasculares ECV (excepto IAM y ACV),Personas bajo control según patología y factores de riesgo (existencia) - Antecedentes de otras Enfermedades Cardiovasculares ECV (excepto IAM y ACV),22
+P4,A,PROGRAMA SALUD CARDIOVASCULAR (PSCV),P4401011,Personas bajo control según patología y factores de riesgo (existencia) - Enfermedad renal crónica (etapas 1 a 5),Personas bajo control según patología y factores de riesgo (existencia) - Enfermedad renal crónica (etapas 1 a 5),23
+P4,B,METAS DE COMPENSACIÓN,P4180200,Personas Bajo Control por Hipertensión - PA < 140/90 mmHg,Personas Bajo Control por Hipertensión - PA < 140/90 mmHg,28
+P4,B,METAS DE COMPENSACIÓN,P4200100,Personas Bajo Control por Hipertensión - PA < 150/90 mmHg,Personas Bajo Control por Hipertensión - PA < 150/90 mmHg,29
+P4,B,METAS DE COMPENSACIÓN,P4180300,Personas Bajo Control por Diabetes Mellitus - HbA1C<7%,Personas Bajo Control por Diabetes Mellitus - HbA1C<7%,30
+P4,B,METAS DE COMPENSACIÓN,P4200200,Personas Bajo Control por Diabetes Mellitus - HbA1C<8%,Personas Bajo Control por Diabetes Mellitus - HbA1C<8%,31
+P4,B,METAS DE COMPENSACIÓN,P4190920,Personas Bajo Control por Diabetes Mellitus - HbA1C<7% - PA < 140/90mmHg y Colesterol LDL < 70 mg/dl,Personas Bajo Control por Diabetes Mellitus - HbA1C<7% - PA < 140/90mmHg y Colesterol LDL < 70 mg/dl,32
+P4,B,METAS DE COMPENSACIÓN,P4401012,Personas con RCV alto - Colesterol LDL < 70 mg/dL,Personas con RCV alto - Colesterol LDL < 70 mg/dL,33
+P4,B,METAS DE COMPENSACIÓN,P4190930,"Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - En tratamiento con Antiagregantes plaquetarios","Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - En tratamiento con Antiagregantes plaquetarios",34
+P4,B,METAS DE COMPENSACIÓN,P4190940,"Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - En tratamiento con Estatina","Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - En tratamiento con Estatina",35
+P4,B,METAS DE COMPENSACIÓN,P4301030,"Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - Fumador actual","Personas bajo control con antecedentes enfermedad cardiovascular (ECV), excepto IAM y ACV - Fumador actual",36
+P4,B,METAS DE COMPENSACIÓN,P4401013,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - En tratamiento con Antiagregantes plaquetarios,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - En tratamiento con Antiagregantes plaquetarios,37
+P4,B,METAS DE COMPENSACIÓN,P4401014,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - En tratamiento con Estatina,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - En tratamiento con Estatina,38
+P4,B,METAS DE COMPENSACIÓN,P4401015,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - Fumador actual,Personas bajo control con antecedentes de Infarto agudo al miocardio (IAM) - Fumador actual,39
+P4,B,METAS DE COMPENSACIÓN,P4401016,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - En tratamiento con Antiagregantes plaquetarios,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - En tratamiento con Antiagregantes plaquetarios,40
+P4,B,METAS DE COMPENSACIÓN,P4401017,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - En tratamiento con Estatina,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - En tratamiento con Estatina,41
+P4,B,METAS DE COMPENSACIÓN,P4401018,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - Fumador actual,Personas bajo control con Antecedentes de Ataque Cerebrovascular (ACV) - Fumador actual,42
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190805,"Con razón albúmina creatinina (RAC), vigente","Con razón albúmina creatinina (RAC), vigente",48
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190806,"Con velocidad de filtración glomerular estimada (VFG), vigente","Con velocidad de filtración glomerular estimada (VFG), vigente",49
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301040,Con velocidad de filtración glomerular estimada (VFGE) y con razón albúmina creatinina (RAC) vigente,Con velocidad de filtración glomerular estimada (VFGE) y con razón albúmina creatinina (RAC) vigente,50
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190950,"Con fondo de ojo, vigente","Con fondo de ojo, vigente",51
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200600,Con atención podológica vigente,Con atención podológica vigente,52
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200300,Con ECG vigente,Con ECG vigente,53
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4180800,En tratamiento con insulina,En tratamiento con insulina,54
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200700,En tratamiento con insulina que logra meta con HBA1C según edad,En tratamiento con insulina que logra meta con HBA1C según edad,55
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190960,Con HBA1C >= 9 %,Con HBA1C >= 9 %,56
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301050,Fumador actual,Fumador actual,57
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401019,Con ERC (todas las etapas) y en tratamiento con IECA o ARA II,Con ERC (todas las etapas) y en tratamiento con IECA o ARA II,58
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190808,Con un examen de colesterol LDL vigente,Con un examen de colesterol LDL vigente,59
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4302100,Con hipoglicemias recurrentes,Con hipoglicemias recurrentes,60
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190809,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo bajo,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo bajo,61
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4170300,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo moderado,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo moderado,62
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190500,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo alto,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo alto,63
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190600,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo máximo,Con *evaluación vigente del pie según pauta de estimación del riesgo de ulceración en personas con diabetes - Riesgo máximo,64
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190970,Con úlceras activas de pie diabético tratadas con curación - Curación Convencional,Con úlceras activas de pie diabético tratadas con curación - Curación Convencional,65
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4170500,Con úlceras activas de pie diabético tratadas con curación - Curación Avanzada,Con úlceras activas de pie diabético tratadas con curación - Curación Avanzada,66
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301060,Con úlceras activas de pie diabético tratadas con curación - Con ayuda técnica de descarga,Con úlceras activas de pie diabético tratadas con curación - Con ayuda técnica de descarga,67
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200800,Con amputación por pie diabético,Con amputación por pie diabético,68
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200900,Con diagnóstico asociado de hipertensión arterial,Con diagnóstico asociado de hipertensión arterial,69
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301070,Con diagnóstico de enfermedad renal crónica,Con diagnóstico de enfermedad renal crónica,70
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4201100,Antecedente de ataque cerebro vascular,Antecedente de ataque cerebro vascular,71
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4201200,Antecedentes de infarto agudo al miocardio,Antecedentes de infarto agudo al miocardio,72
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4302102,Retinopatía diabética,Retinopatía diabética,73
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4190812,"Con razón albúmina creatinina (RAC), vigente","Con razón albúmina creatinina (RAC), vigente",75
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301010,Con velocidad de filtración glomerular estimada (VFGE) vigente,Con velocidad de filtración glomerular estimada (VFGE) vigente,76
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4301080,Con velocidad de filtración glomerular estimada (VFGE) y con razón albúmina creatinina (RAC) vigente,Con velocidad de filtración glomerular estimada (VFGE) y con razón albúmina creatinina (RAC) vigente,77
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200400,Con presión arterial igual o mayor 160/100 MMHG,Con presión arterial igual o mayor 160/100 MMHG,78
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401020,Con diagnóstico de enfermedad renal crónica,Con diagnóstico de enfermedad renal crónica,79
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4302103,Protocolo Hearts,Protocolo Hearts,80
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4201500,Sobrepeso: IMC entre 25 y 29.9 <65 años,Sobrepeso: IMC entre 25 y 29.9 <65 años,82
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4201600,Sobrepeso: IMC entre 28 y 31.9 >65 años,Sobrepeso: IMC entre 28 y 31.9 >65 años,83
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4200500,Obesidad: IMC igual o Mayor a 30KG/M2 <65 años,Obesidad: IMC igual o Mayor a 30KG/M2 <65 años,84
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4201700,Obesidad: IMC igual o Mayor a 32KG/M2 >65 años,Obesidad: IMC igual o Mayor a 32KG/M2 >65 años,85
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4302104,Personas en actividad física salud cardiovascular,Personas en actividad física salud cardiovascular,86
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401021,Fumador actual,Fumador actual,87
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401022,Enfermedad Renal Crónica (ERC) - Sin enfermedad renal (S/ERC),Enfermedad Renal Crónica (ERC) - Sin enfermedad renal (S/ERC),88
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401023,Enfermedad Renal Crónica (ERC) - Etapa G1,Enfermedad Renal Crónica (ERC) - Etapa G1,89
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401024,Enfermedad Renal Crónica (ERC) - Etapa G2,Enfermedad Renal Crónica (ERC) - Etapa G2,90
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401025,Enfermedad Renal Crónica (ERC) - Etapa G3a,Enfermedad Renal Crónica (ERC) - Etapa G3a,91
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401026,Enfermedad Renal Crónica (ERC) - Etapa G3b,Enfermedad Renal Crónica (ERC) - Etapa G3b,92
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401027,Enfermedad Renal Crónica (ERC) - Etapa G4,Enfermedad Renal Crónica (ERC) - Etapa G4,93
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401028,Enfermedad Renal Crónica (ERC) - Etapa G5,Enfermedad Renal Crónica (ERC) - Etapa G5,94
+P4,C,VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE,P4401029,Enfermedad Renal Crónica (ERC) - Desconoce si tiene ERC,Enfermedad Renal Crónica (ERC) - Desconoce si tiene ERC,95

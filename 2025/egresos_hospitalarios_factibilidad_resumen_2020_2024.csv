@@ -1,0 +1,22 @@
+﻿ano,indicador,descripcion,total,snss,no_snss,metodo,estado
+2020,18,Egresos hospitalarios por enfermedad cerebrovascular,6758,5407,1351,"DIAG1 in G45, I63-I67, I69; FONASA; RM; 15+",Factible local
+2021,18,Egresos hospitalarios por enfermedad cerebrovascular,7560,5873,1687,"DIAG1 in G45, I63-I67, I69; FONASA; RM; 15+",Factible local
+2022,18,Egresos hospitalarios por enfermedad cerebrovascular,8291,6429,1862,"DIAG1 in G45, I63-I67, I69; FONASA; RM; 15+",Factible local
+2023,18,Egresos hospitalarios por enfermedad cerebrovascular,8976,6990,1986,"DIAG1 in G45, I63-I67, I69; FONASA; RM; 15+",Factible local
+2024,18,Egresos hospitalarios por enfermedad cerebrovascular,10148,7637,2511,"DIAG1 in G45, I63-I67, I69; FONASA; RM; 15+",Factible local
+2020,19,Egresos hospitalarios por enfermedades isquémicas del corazón,6169,5156,1013,DIAG1 in I20-I25; FONASA; RM; 15+,Factible local
+2021,19,Egresos hospitalarios por enfermedades isquémicas del corazón,8556,7095,1461,DIAG1 in I20-I25; FONASA; RM; 15+,Factible local
+2022,19,Egresos hospitalarios por enfermedades isquémicas del corazón,9025,7633,1392,DIAG1 in I20-I25; FONASA; RM; 15+,Factible local
+2023,19,Egresos hospitalarios por enfermedades isquémicas del corazón,9282,7760,1522,DIAG1 in I20-I25; FONASA; RM; 15+,Factible local
+2024,19,Egresos hospitalarios por enfermedades isquémicas del corazón,9569,7751,1818,DIAG1 in I20-I25; FONASA; RM; 15+,Factible local
+2020,20,Egresos hospitalarios por insuficiencia cardiaca,3957,3229,728,DIAG1 in I50 or J81; FONASA; RM; 15+,Factible local
+2021,20,Egresos hospitalarios por insuficiencia cardiaca,4841,3920,921,DIAG1 in I50 or J81; FONASA; RM; 15+,Factible local
+2022,20,Egresos hospitalarios por insuficiencia cardiaca,5871,4753,1118,DIAG1 in I50 or J81; FONASA; RM; 15+,Factible local
+2023,20,Egresos hospitalarios por insuficiencia cardiaca,5681,4643,1038,DIAG1 in I50 or J81; FONASA; RM; 15+,Factible local
+2024,20,Egresos hospitalarios por insuficiencia cardiaca,6049,4863,1186,DIAG1 in I50 or J81; FONASA; RM; 15+,Factible local
+2020,21,Egresos hospitalarios por diabetes mellitus,3634,3230,404,DIAG1 in E11-E14; FONASA; RM; 15+,Factible local
+2021,21,Egresos hospitalarios por diabetes mellitus,3429,3044,385,DIAG1 in E11-E14; FONASA; RM; 15+,Factible local
+2022,21,Egresos hospitalarios por diabetes mellitus,4239,3746,493,DIAG1 in E11-E14; FONASA; RM; 15+,Factible local
+2023,21,Egresos hospitalarios por diabetes mellitus,4394,4032,362,DIAG1 in E11-E14; FONASA; RM; 15+,Factible local
+2024,21,Egresos hospitalarios por diabetes mellitus,5107,4614,493,DIAG1 in E11-E14; FONASA; RM; 15+,Factible local
+2022,22_proxy,Proxy amputación pie diabético,1802,1719,83,DIAG1 in E11-E14 + glosa intervención/procedimiento con amputación de extremidad inferior o dedos/pie; FONASA; RM; 15+,Solo proxy 2022

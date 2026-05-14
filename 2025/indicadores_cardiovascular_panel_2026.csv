@@ -1,0 +1,145 @@
+﻿orden,indicador_id,indicador_numero_base,nombre_indicador,grupo_indicador,fuente_principal,estado_local,numerador,denominador,amplificador,valor_2019,valor_2021,valor_2022,valor_2023,valor_2024,valor_2025,valor_2024_rm,numerador_2024_rm,denominador_2024_rm,ultimo_ano_disponible,ultimo_valor_disponible
+1.0,1,1,Cobertura de hipertensión arterial (HTA),HTA y HEARTS,REM P4 + PIV,Exacto,"Número de personas bajo control con diagnóstico de HTA, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Hipertensión arterial","Número de personas con HTA según prevalencia estimada en la población inscrita validada, en el año x.
+
+Fuente: Población inscrita validada FONASA de 15 años y más, x prevalencia HTA según ENS (27,6%)",100.0,0.633,,0.582,0.603,0.569,0.612,0.5801909816643307,733785.0,1264730.103,2025.0,0.612
+2.0,2,2,Control de HTA,HTA y HEARTS,REM P4,Exacto,"Número de personas bajo control con diagnóstico de HTA, con presión arterial menor a 140/90 mmHg (15 a 79 años) + Número de personas bajo control con diagnóstico de HTA, con presión arterial menor a 150/90 mmHg (mayores de 80 años), en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección B: Metas de Compensación -> Personas bajo control por HTA -> PA < 140/90mmHg + PA < 150/90 mmHg","Número de personas bajo control con diagnóstico de HTA, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Hipertensión arterial",100.0,0.695,,0.611,0.632,0.647,,,,,2024.0,0.647
+3.0,3,3,Cobertura efectiva (tasa de control poblacional) de HTA,HTA y HEARTS,REM P4 + PIV,Exacto,"Número de personas bajo control con diagnóstico de HTA, con presión arterial menor a 140/90 mmHg (15 a 79 años) + Número de personas bajo control con diagnóstico de HTA, con presión arterial menor a 150/90 mmHg (mayores de 80 años), en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección B: Metas de Compensación -> Personas bajo control por HTA -> PA < 140/90mmHg + PA < 150/90 mmHg","Número de personas con HTA según prevalencia estimada en la población inscrita validada, en el año x.
+
+Fuente: Población inscrita validada FONASA de 15 años y más, x prevalencia HTA según ENS (27,6%)",100.0,0.44,,0.356,0.376,0.368,0.407,0.3737809346663428,472732.0,1264730.103,2025.0,0.407
+4.0,4,4,"Porcentaje de personas con diagnóstico de HTA, muy descompensadas",HTA y HEARTS,REM P4,Exacto,"Número de personas bajo control con diagnóstico de HTA, con presión arterial igual o mayor a 160/100 mmHg, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección C: Variables de seguimiento del PSCV al corte -> Personas con HTA en el PSCV -> Con presión arterial igual o mayor a 160/100 mmHg","Número de personas bajo control con diagnóstico de HTA, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección A (Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Hipertensión arterial",100.0,0.052,,0.0644,0.0595,0.053,0.07,0.04383709124607344,32167.0,733785.0,2025.0,0.07
+5.0,5,5,Cobertura de evaluación del Índice de Madurez HEARTS,HTA y HEARTS,Fuente externa HEARTS,No factible,Obtención del indicador de la fuente de información respectiva,,100.0,,,,,,,0.32714078374455735,240051.0,733785.0,,
+6.0,6,6,Cobertura de diabetes mellitus tipo 2 (DM2),DM2 y seguimiento,REM P4 + PIV,Exacto,"Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2","Número de personas con DM2 según prevalencia estimada en la población inscrita validada, en el año x.
+
+Fuente: Población inscrita validada FONASA de 15 años y más, x prevalencia DM2 según ENS (12,3%)",100.0,0.675,,0.664,0.696,0.649,0.732,0.6259096534589285,356658.0,569823.453,2025.0,0.732
+7.0,7,7,Control de DM2,DM2 y seguimiento,REM P4,Exacto,"Número de personas bajo control con diagnóstico de DM2, con HbA1c menor a 7% (15 a 79 años) + Número de personas bajo control con diagnóstico de DM2, con HbA1c menor a 8% (mayores de 80 años), en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección B: Metas de Compensación -> Personas bajo control por DM -> HbA1C <7% + HbA1C <8%","Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2",100.0,0.47,,0.415,0.444,0.453,,,,,2024.0,0.453
+8.0,8,8,Cobertura efectiva (tasa de control poblacional) de DM2,DM2 y seguimiento,REM P4 + PIV,Exacto,"Número de personas bajo control con diagnóstico de DM2, con HbA1c menor a 7% (15 a 79 años) + Número de personas bajo control con diagnóstico de DM2, con HbA1c menor a 8% (mayores de 80 años), en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección B: Metas de Compensación -> Personas bajo control por DM -> HbA1C <7% + HbA1C <8%","Número de personas con DM2 según prevalencia estimada en la población inscrita validada, en el año x.
+
+Fuente: Población inscrita validada FONASA de 15 años y más, x prevalencia DM2 según ENS (12,3%)",100.0,0.317,,0.276,0.305,0.294,0.323,0.27883022217409503,158884.0,569823.453,2025.0,0.323
+9.0,9,9,"Porcentaje de personas con diagnóstico de DM2, muy descompensadas",DM2 y seguimiento,REM P4,Exacto,"Número de personas bajo control con diagnóstico de DM2, con HbA1c mayor o igual a 9%, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección C: Variables de seguimiento del PSCV al corte -> Personas con diabetes en el PSCV -> Con HbA1C >= 9%","Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2",100.0,0.192,,0.199,0.189,0.199,0.197,0.1928822569520381,68793.0,356658.0,2025.0,0.197
+10.0,10,10,"Porcentaje de personas con diagnóstico de DM2, compensada, usuarias de insulina",DM2 y seguimiento,REM P4,Exacto,"Número de personas bajo control con diagnóstico de DM2, compensada (HbA1c <7%), usuarios de insulina.
+
+Fuente: Serie P-> REM P4 -> Sección C: Variables de seguimiento de PSCV al corte -> Personas con diabetes en PSCV-> En tratamiento con insulina que logra meta con HbA1C según edad","Número de personas bajo control con diagnóstico de DM2, usuarias de insulina.
+
+Fuente: Serie P-> REM P4 -> Sección C: Variables de seguimiento de PSCV al corte -> Personas con diabetes en PSCV-> En tratamiento con insulina",100.0,0.238,,0.236,0.227,0.221,0.24,0.21344226599793426,22938.0,107467.0,2025.0,0.24
+11.0,11,11,"Porcentaje de personas con diagnóstico de DM2, con evaluación de pie diabético vigente",DM2 y seguimiento,REM P4,Exacto,"Número de personas bajo control con diagnóstico de DM2 y evaluación de pie diabético vigente.
+
+Fuente: Serie P-> REM P4 -> Sección C: Variables de seguimiento de PSCV al corte -> Personas con diabetes en el PSCV ->Con ""evaluación vigente del pie según pauta de estimación del riesgo de ulceración"" -> Riesgo bajo + Riesgo moderado + Riesgo alto + Riesgo máximo","Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2",100.0,0.81,,0.765,0.8,0.828,0.83,0.7929192671971469,282801.0,356658.0,2025.0,0.83
+12.1,12a,12,Porcentaje de personas con diagnóstico de DM2 y tamizaje de RD vigente,DM2 y seguimiento,REM P4 (parcial),Parcial,"Número de personas bajo control con diagnóstico de DM2 sin retinopatía diabética y con tamizaje de retinopatía diabética vigente.
+
+Fuente: Serie P-> REM P4 -> Sección C: Variables de seguimiento de PSCV al corte -> Personas con diabetes en el PSCV ->Con tamizaje de retinopatía diabética vigente","Número de personas bajo control con diagnóstico de DM2 sin retinopatía diabética 
+(diferencia entre el número de personas bajo control con diagnóstico de DM2 y el número de personas con diagnostico de DM2 con retinopatía diabética)
+
+*Personas bajo control con diagnóstico de DM2:
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2
+
+*Personas bajo control con diagnóstico de DM2 y con retinopatía diabética
+Fuente: Serie P->REM P4->Sección C: Variables de seguimiento del PSCV al corte ->Personas con diabetes en el PSCV->Con retinopatía diabética",100.0,S/D,,S/D,S/D,S/D,,0.4162979661188029,148476.0,356658.0,,
+12.2,12b,12,"Porcentaje de personas con diagnóstico de DM2, con evaluación de fondo de ojo (FO) vigente",DM2 y seguimiento,REM P4,Exacto,"Número de personas de 15 años y más con diabetes mellitus y evaluación de fondo de ojo vigente (12 meses).
+
+Fuente: Serie P -> REM P4 -> Sección C: Variables de seguimiento del PSCV al corte -> Personas con diabetes en el PSCV -> Con fondo de ojo vigente","Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2",100.0,0.365,0.271,0.360471104480327,0.404,0.446,0.472,,,,2025.0,0.472
+13.0,13,13,"Porcentaje de personas con diagnóstico de HTA, con evaluación de función renal",Función renal y ERC,REM P4,Exacto,"Número de personas bajo control con diagnóstico de HTA y con examenes de función renal (VFGe y RAC) vigentes, en el año x. 
+
+Fuente: Serie P -> REM P4 -> Sección C: Variables de seguimiento del PSCV al corte -> Personas con hipertensión en el PSCV -> Con razón albúmina creatinina (RAC) vigente y velocidad de filtración glomerular estimada (VFGe) vigente","Número de personas bajo control con diagnóstico de HTA, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección A (Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Hipertensión arterial",100.0,S/D,,0.475,0.551,0.59,0.628,0.6099211621932855,447551.0,733785.0,2025.0,0.628
+14.0,14,14,"Porcentaje de personas con diagnóstico de DM2, con evaluación de función renal",Función renal y ERC,REM P4,Exacto,"Número de personas bajo control con diagnóstico de DM2 y con exámenes de función renal (VFGe y RAC) vigentes, en el año x.
+
+Fuente: Serie P -> REM P4 -> Sección C: Variables de seguimiento del PSCV al corte -> Personas con diabetes en el PSCV -> Con razón albúmina creatinina (RAC) vigente y velocidad de filtración glomerular estimada (VFGe) vigente","Número de personas bajo control con diagnóstico de DM2, en el año x.
+
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV -> Personas bajo control según patología y factores de riesgo -> Diabetes mellitus tipo 2",100.0,S/D,,0.566,0.594,0.632,0.662,0.6434763835382916,229501.0,356658.0,2025.0,0.662
+15.0,15,15,Porcentaje de personas con diagnóstico de DM y ERC en tratamiento de prevención secundaria de ERC,Función renal y ERC,REM P4 2025,Exacto solo 2025,"Número de personas bajo control con diagnóstico de DM2 y ERC, en tratamiento con IECA o ARA II, en el año x.
+
+Fuente: Serie P->REM P4->Sección C: Variables de seguimiento del PSCV al cort->Personas con diabetes en el PSCV->  Con ERC (todas las etapas) y en tratamiento con IECA o ARA II.","Número de personas bajo control con diagnóstico de DM2 y ERC, en el año x.
+
+Fuente: Serie P->REM P4->Sección C: Variables de seguimiento del PSCV al cort->Personas con diabetes en el PSCV->  Con diagnóstico de enfermedad renal crónica.",100.0,S/D,,S/D,S/D,S/D,0.624,,,,2025.0,0.624
+16.0,16,16,"Porcentaje de personas con diagnóstico de enfermedad cardio-cerebrovascular (ECV), en tratamiento con antiagregante plaquetario",ECV y prevención secundaria,REM P4 / planilla,Exacto solo 2025,"Número de personas con ECV en tratamiento con antiagregante plaquetario
+Fuente: Serie P -> REM P4 -> Sección B: Metas de compensación 
+
+Sumar: personas bajo control con antecedentes de infarto agudo al miocardio (IAM) -> En tratamiento con antiagregante plaquetario + personas bajo control con antecedentes de ataque cerebrovascular (ACV) -> En tratamiento con antiagregante plaquetario","Número de personas bajo control por ECV 
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Antecedentes de Infarto agudo al miocardio + Antecedentes de Enf. Cerebrovasculares",100.0,0.489,,0.493,0.482,0.471,0.507,0.4264045829610553,40566.0,95135.0,2025.0,0.507
+17.0,17,17,"Porcentaje de personas con diagnóstico de ECV, en tratamiento con estatinas",ECV y prevención secundaria,REM P4 / planilla,Exacto solo 2025,"Número de personas con ECV en tratamiento con estatina
+Fuente: Serie P -> REM P4 -> Sección B: Metas de compensación
+
+Sumar: personas bajo control con antecedentes de infarto agudo al miocardio (IAM) -> En tratamiento con estatinas + personas bajo control con antecedentes de ataque cerebrovascular (ACV) -> En tratamiento con estatinas","Número de personas bajo control por ECV
+Fuente: Serie P -> REM P4 Sección A -> Número de personas en PSCV ->Personas bajo control según patología y factores de riesgo -> Antecedentes de Infarto agudo al miocardio + Antecedentes de Enf. Cerebrovasculares",100.0,0.53,,0.659,0.579,0.586,0.61,0.5266095548431177,50099.0,95135.0,2025.0,0.61
+18.0,18,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,Egresos hospitalarios,Egresos hospitalarios + FONASA,Factible con egresos,"Número de egresos hospitalarios por enfermedades cerebrovasculares de personas de 15 años y más beneficiarias de FONASA en el año X.
+
+Fuente: Tablero DEIS Egresos Hospitalarios
+https://informesdeis.minsal.cl/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F23138671-c0be-479a-8e9d-52850e584251&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&sas-welcome=false
+Extraer datos y sumar:
+-Establecimientos pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Enfermedades cerebrovasculares (I63 al I67 e I69), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Enfermedades cerebrovasculares (I63 al I67 e I69), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema nervioso central -> Trastornos episódicos y paroxísticos ->Ataques de isquemia cerebral transitoria y síndromes afines (G45), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema nervioso central -> Trastornos episódicos y paroxísticos ->Ataques de isquemia cerebral transitoria y síndromes afines (G45), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+**Códigos CIE 10: G45; I63 al I67 e I69.","Población beneficiaria de 15 años y más en FONASA para el año X
+
+Fuente: FONASA",10000.0,S/D,,16.7,19.5,20.8,,20.694539436878326,10572.0,5108594.0,2024.0,20.8
+19.0,19,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,Egresos hospitalarios,Egresos hospitalarios + FONASA,Factible con egresos,"Número de egresos hospitalarios por enfermedades isquémicas del corazón de personas de 15 años y más beneficiarias de FONASA en el año X.
+
+Fuente: Tablero DEIS Egresos Hospitalarios
+https://informesdeis.minsal.cl/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F23138671-c0be-479a-8e9d-52850e584251&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&sas-welcome=false
+Extraer datos y sumar:
+-Establecimientos pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Enfermedades Isquémicas del corazón (I20 a I25), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Enfermedades Isquémicas del corazón (I20 a I25), filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+**Códigos CIE 10: I20 a I25.","Población beneficiaria de 15 años y más en FONASA para el año X
+
+Fuente: FONASA",10000.0,S/D,,19.5,20.4,20.7,,19.921332562344944,10177.0,5108594.0,2024.0,20.7
+20.0,20,20,Tasa de egresos hospitalarios por insuficiencia cardiaca,Egresos hospitalarios,Egresos hospitalarios + FONASA,Factible con egresos,"Número de egresos hospitalarios por insuficiencia cardiaca de personas de 15 años y más beneficiarias de FONASA en el año X.
+
+Fuente: Tablero DEIS Egresos Hospitalarios
+https://informesdeis.minsal.cl/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F23138671-c0be-479a-8e9d-52850e584251&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&sas-welcome=false
+
+Extraer datos y sumar:
+-Establecimientos pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Otras formas de enfermedad al corazón -> Insuficiencia Cardiaca (I50) , filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema circulatorio -> Otras formas de enfermedad al corazón -> Insuficiencia Cardiaca (I50) , filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos pertenecientes al SNSS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema respiratorio -> Otras enfermedades que afectan principalmente al intersticio ->Edema pulmonar (J81) , filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SS -> Número de hospitalizaciones según diagnóstico -> Enfermedades del sistema respiratorio -> Otras enfermedades que afectan principalmente al intersticio ->Edema pulmonar (J81) , filtrar por año, región, pertenecientes a FONASA y rango etario de 15 años y más.
+**Códigos CIE 10: I50 y J81.","Población beneficiaria de 15 años y más en FONASA para el año X
+
+Fuente: FONASA",10000.0,S/D,,12.3,12.4,12.9,,12.093347014853794,6178.0,5108594.0,2024.0,12.9
+21.0,21,21,Tasa de egresos hospitalarios por diabetes mellitus,Egresos hospitalarios,Egresos hospitalarios + FONASA,Factible con egresos,"Número de egresos hospitalarios por diabetes mellitus de personas de 15 años y más beneficiarias de FONASA en el año X.
+
+Fuente: Tablero DEIS Egresos Hospitalarios
+https://informesdeis.minsal.cl/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F23138671-c0be-479a-8e9d-52850e584251&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&sas-welcome=false
+
+Extraer datos y sumar:
+-Establecimientos pertenecientes al SS -> Enfermedades Endocrinas, metabólicas y nutricionales ->Diabetes mellitus-> suma de los egresos por:  Diabetes mellitus no insulinodependiente; Diabetes mellitus asociada con desnutrición; Otras diabetes mellitus especificadas; Diabetes mellitus, no especificada (E11 al E14). Filtrar por año, región, previsión FONASA y rango etario de 15 años y más.
+-Establecimientos no pertenecientes al SNSS -> Enfermedades Endocrinas, metabólicas y nutricionales ->Diabetes mellitus-> suma de los egresos por:  Diabetes mellitus no insulinodependiente; Diabetes mellitus asociada con desnutrición; Otras diabetes mellitus especificadas; Diabetes mellitus, no especificada (E11 al E14). Filtrar por año, región, previsión FONASA y rango etario de 15 años y más.
+**Códigos CIE 10: E11-E14.","Población beneficiaria de 15 años y más en FONASA para el año X
+
+Fuente: FONASA",10000.0,S/D,,9.7,9.7,10.5,,,,,2024.0,10.5
+22.0,22,22,Tasa de egresos hospitalarios en personas con diabetes mellitus y amputación del pie diabético de establecimientos pertenecientes al SNSS,Egresos hospitalarios,Egresos hospitalarios + FONASA,No factible,"Número de egresos hospitalarios por amputación de extremidad inferior (pie diabético) de personas de 15 años y más con diabetes mellitus 2 en el año X.
+
+Fuente: Tablero PSCV DEIS
+https://informesdeis.minsal.cl/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F09de985b-d8d1-48df-bf54-6635389023b5&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&sas-welcome=false
+-> Amputación extremidad inferior, filtrar por año, región, pertenecientes al Sistema Nacional de Servicios de Salud, previsión FONASA, todos los tipos de intervención y rango etario de 15 años y más.","Población beneficiaria de 15 años y más en FONASA para el año X
+
+Fuente: FONASA",10000.0,S/D,,7.8,7.9,8.4,,7.70466394471747,3936.0,5108594.0,2024.0,8.4

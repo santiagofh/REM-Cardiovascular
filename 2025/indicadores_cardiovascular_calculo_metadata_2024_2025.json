@@ -1,0 +1,148 @@
+{
+  "generado_en": "2026-05-12T16:30:47.554314",
+  "alcance": "Indicadores cardiovasculares calculados desde Serie P mes 12 y población inscrita validada APS.",
+  "serie_p_fuentes": {
+    "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieP2024.csv",
+    "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieP2025.csv"
+  },
+  "poblacion_fuente": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv",
+  "maestro_fuente": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+  "indicadores_incluidos": [
+    {
+      "indicador_id": "1",
+      "nombre_indicador": "Cobertura de hipertensión arterial (HTA)",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "2",
+      "nombre_indicador": "Control de HTA",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "3",
+      "nombre_indicador": "Cobertura efectiva (tasa de control poblacional) de HTA",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "4",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de HTA, muy descompensadas",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "6",
+      "nombre_indicador": "Cobertura de diabetes mellitus tipo 2 (DM2)",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "7",
+      "nombre_indicador": "Control de DM2",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "8",
+      "nombre_indicador": "Cobertura efectiva (tasa de control poblacional) de DM2",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "9",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM2, muy descompensadas",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "10",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM2, compensada, usuarias de insulina",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "11",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM2, con evaluación de pie diabético vigente",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "12b",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM2, con evaluación de fondo de ojo vigente",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "13",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de HTA, con evaluación de función renal",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "14",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM2, con evaluación de función renal",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "15",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de DM y ERC en tratamiento de prevención secundaria de ERC",
+      "anios": [
+        2025
+      ]
+    },
+    {
+      "indicador_id": "16",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de ECV, en tratamiento con antiagregante plaquetario",
+      "anios": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "indicador_id": "17",
+      "nombre_indicador": "Porcentaje de personas con diagnóstico de ECV, en tratamiento con estatinas",
+      "anios": [
+        2024,
+        2025
+      ]
+    }
+  ],
+  "archivos_generados": {
+    "rem_componentes": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\rem_p4_cardiovascular_col01_mes12_2024_2025.csv",
+    "indicadores_base": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_base_establecimiento_2024_2025.csv",
+    "dashboard": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_dashboard_2024_2025.csv",
+    "rm": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_rm_2024_2025.csv",
+    "validacion": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_validacion_rm_2024.csv",
+    "catalogo": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_catalogo_2024_2025.csv",
+    "metadata": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\indicadores_cardiovascular_calculo_metadata_2024_2025.json"
+  }
+}

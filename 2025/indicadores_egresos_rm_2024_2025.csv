@@ -1,0 +1,591 @@
+﻿Ano,indicador_id,nombre_indicador,nivel,IdServicio,servicio_salud,comuna,n_egresos,denominador_piv,tasa_x10000
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13101,536,211964,25.2873
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13101,565,211964,26.6555
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13101,291,211964,13.7287
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13101,179,211964,8.4448
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13101,7,211964,0.3302
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13102,105,41147,25.5183
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13102,115,41147,27.9486
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13102,67,41147,16.2831
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13102,69,41147,16.7691
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13102,0,41147,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13103,319,105817,30.1464
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13103,194,105817,18.3335
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13103,217,105817,20.5071
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13103,166,105817,15.6875
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13103,6,105817,0.567
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13104,200,98154,20.3761
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13104,164,98154,16.7084
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13104,114,98154,11.6144
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13104,95,98154,9.6787
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13104,16,98154,1.6301
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13105,278,148546,18.7147
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13105,253,148546,17.0318
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13105,193,148546,12.9926
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13105,205,148546,13.8004
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13105,0,148546,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13106,236,75998,31.0534
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13106,221,75998,29.0797
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13106,166,75998,21.8427
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13106,97,75998,12.7635
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13106,5,75998,0.6579
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13107,114,61559,18.5188
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13107,90,61559,14.6201
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13107,57,61559,9.2594
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13107,35,61559,5.6856
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13107,0,61559,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13108,146,71993,20.2797
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13108,107,71993,14.8626
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13108,72,71993,10.001
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13108,67,71993,9.3065
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13108,13,71993,1.8057
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13109,131,60285,21.7301
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13109,106,60285,17.5831
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13109,89,60285,14.7632
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13109,38,60285,6.3034
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13109,0,60285,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,577,289088,19.9593
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,901,289088,31.167
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,343,289088,11.8649
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,270,289088,9.3397
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,4,289088,0.1384
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,219,122505,17.8768
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,326,122505,26.6112
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,100,122505,8.1629
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,82,122505,6.6936
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,1,122505,0.0816
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,330,131400,25.1142
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,347,131400,26.4079
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,149,131400,11.3394
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,146,131400,11.1111
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,2,131400,0.1522
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13113,106,36195,29.2858
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13113,83,36195,22.9313
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13113,55,36195,15.1955
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13113,21,36195,5.8019
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13113,1,36195,0.2763
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13114,211,71731,29.4155
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13114,191,71731,26.6273
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13114,113,71731,15.7533
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13114,58,71731,8.0858
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13114,0,71731,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13115,54,37373,14.4489
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13115,56,37373,14.9841
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13115,33,37373,8.8299
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13115,33,37373,8.8299
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13115,1,37373,0.2676
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13116,145,81332,17.8282
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13116,132,81332,16.2298
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13116,91,81332,11.1887
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13116,90,81332,11.0658
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13116,1,81332,0.123
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13117,172,110987,15.4973
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13117,89,110987,8.019
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13117,97,110987,8.7398
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13117,124,110987,11.1725
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13117,3,110987,0.2703
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13118,199,109584,18.1596
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13118,162,109584,14.7832
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13118,135,109584,12.3193
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13118,123,109584,11.2243
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13118,1,109584,0.0913
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13119,684,244804,27.9407
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13119,631,244804,25.7757
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13119,384,244804,15.686
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13119,344,244804,14.0521
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13119,16,244804,0.6536
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13120,257,75252,34.1519
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13120,188,75252,24.9827
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13120,146,75252,19.4015
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13120,95,75252,12.6242
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13120,2,75252,0.2658
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13121,157,94299,16.6492
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13121,141,94299,14.9524
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13121,114,94299,12.0892
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13121,61,94299,6.4688
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13121,1,94299,0.106
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13122,401,176751,22.6873
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13122,295,176751,16.6901
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13122,250,176751,14.1442
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13122,257,176751,14.5402
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13122,2,176751,0.1132
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13123,155,62235,24.9056
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13123,95,62235,15.2647
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13123,57,62235,9.1588
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13123,27,62235,4.3384
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13123,2,62235,0.3214
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13124,298,174621,17.0655
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13124,229,174621,13.1141
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13124,162,174621,9.2772
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13124,238,174621,13.6295
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13124,9,174621,0.5154
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13125,213,130283,16.349
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13125,143,130283,10.9761
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13125,98,130283,7.5221
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13125,112,130283,8.5967
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13125,11,130283,0.8443
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13126,225,81099,27.7439
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13126,158,81099,19.4824
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13126,161,81099,19.8523
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13126,136,81099,16.7696
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13126,5,81099,0.6165
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13127,251,108569,23.1189
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13127,175,108569,16.1188
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13127,140,108569,12.895
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13127,122,108569,11.2371
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13127,13,108569,1.1974
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13128,330,113800,28.9982
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13128,221,113800,19.42
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13128,188,113800,16.5202
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13128,191,113800,16.7838
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13128,7,113800,0.6151
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13129,160,79783,20.0544
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13129,124,79783,15.5422
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13129,120,79783,15.0408
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13129,61,79783,7.6457
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13129,1,79783,0.1253
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13130,111,80026,13.8705
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13130,105,80026,13.1207
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13130,95,80026,11.8711
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13130,55,80026,6.8728
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13130,0,80026,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,171,68280,25.0439
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,177,68280,25.9227
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,75,68280,10.9842
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,64,68280,9.3732
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,1,68280,0.1465
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13132,37,17428,21.2302
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13132,29,17428,16.6399
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13132,31,17428,17.7875
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13132,7,17428,4.0165
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13132,0,17428,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,858,344362,24.9156
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,1189,344362,34.5276
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,716,344362,20.7921
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,332,344362,9.641
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,12,344362,0.3485
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,27,20520,13.1579
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,46,20520,22.4172
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,21,20520,10.2339
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,13,20520,6.3353
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,1,20520,0.4873
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,30,8026,37.3785
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,38,8026,47.3461
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,36,8026,44.8542
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,15,8026,18.6893
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,0,8026,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13301,115,95978,11.9819
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13301,103,95978,10.7316
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13301,64,95978,6.6682
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13301,65,95978,6.7724
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13301,5,95978,0.521
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13302,95,61900,15.3473
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13302,80,61900,12.9241
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13302,57,61900,9.2084
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13302,52,61900,8.4006
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13302,8,61900,1.2924
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13303,33,12443,26.5209
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13303,35,12443,28.1283
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13303,35,12443,28.1283
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13303,16,12443,12.8586
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13303,1,12443,0.8037
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13401,373,203432,18.3354
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13401,375,203432,18.4337
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13401,203,203432,9.9788
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13401,279,203432,13.7147
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13401,2,203432,0.0983
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13402,132,77108,17.1188
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13402,129,77108,16.7298
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13402,101,77108,13.0985
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13402,83,77108,10.7641
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13402,0,77108,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13403,21,15838,13.2592
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13403,22,15838,13.8906
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13403,7,15838,4.4197
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13403,9,15838,5.6825
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13403,0,15838,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13404,104,58068,17.91
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13404,82,58068,14.1214
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13404,51,58068,8.7828
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13404,60,58068,10.3327
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13404,0,58068,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13501,213,97809,21.7771
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13501,183,97809,18.7099
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13501,83,97809,8.4859
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13501,151,97809,15.4383
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13501,0,97809,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13502,6,6483,9.255
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13502,7,6483,10.7975
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13502,5,6483,7.7125
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13502,3,6483,4.6275
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13502,0,6483,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13503,78,18982,41.0916
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13503,52,18982,27.3944
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13503,33,18982,17.3849
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13503,57,18982,30.0284
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13503,1,18982,0.5268
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13504,9,12908,6.9724
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13504,16,12908,12.3954
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13504,10,12908,7.7471
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13504,7,12908,5.423
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13504,0,12908,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13505,8,11168,7.1633
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13505,9,11168,8.0587
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13505,4,11168,3.5817
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13505,5,11168,4.4771
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13505,0,11168,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13601,137,48336,28.3433
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13601,125,48336,25.8606
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13601,64,48336,13.2406
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13601,118,48336,24.4124
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13601,1,48336,0.2069
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13602,67,27417,24.4374
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13602,56,27417,20.4253
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13602,25,27417,9.1184
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13602,36,27417,13.1305
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13602,0,27417,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13603,63,28417,22.1698
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13603,51,28417,17.947
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13603,25,28417,8.7976
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13603,40,28417,14.0761
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13603,0,28417,0.0
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13604,93,43673,21.2946
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13604,78,43673,17.86
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13604,44,43673,10.0749
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13604,62,43673,14.1964
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13604,2,43673,0.4579
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13605,200,66955,29.8708
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13605,134,66955,20.0134
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13605,88,66955,13.1432
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13605,64,66955,9.5587
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13605,2,66955,0.2987
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,09,Servicio de Salud Metropolitano Norte,,1167,640879,18.2094
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,09,Servicio de Salud Metropolitano Norte,,897,640879,13.9964
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,09,Servicio de Salud Metropolitano Norte,,637,640879,9.9395
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,09,Servicio de Salud Metropolitano Norte,,564,640879,8.8004
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,09,Servicio de Salud Metropolitano Norte,,67,640879,1.0454
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,2218,948472,23.385
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1602,948472,16.8903
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1206,948472,12.7152
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1398,948472,14.7395
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,36,948472,0.3796
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,11,Servicio de Salud Metropolitano Central,,1561,573913,27.1992
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,11,Servicio de Salud Metropolitano Central,,1532,573913,26.6939
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,11,Servicio de Salud Metropolitano Central,,908,573913,15.8212
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,11,Servicio de Salud Metropolitano Central,,689,573913,12.0053
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,11,Servicio de Salud Metropolitano Central,,28,573913,0.4879
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,1420,586549,24.2094
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,1099,586549,18.7367
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,820,586549,13.9801
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,621,586549,10.5874
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,9,586549,0.1534
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,13,Servicio de Salud Metropolitano Sur,,1612,898717,17.9367
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,13,Servicio de Salud Metropolitano Sur,,1469,898717,16.3455
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,13,Servicio de Salud Metropolitano Sur,,1064,898717,11.8391
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,13,Servicio de Salud Metropolitano Sur,,941,898717,10.4705
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,13,Servicio de Salud Metropolitano Sur,,5,898717,0.0556
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,2212,984181,22.4755
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,3024,984181,30.7261
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,1440,984181,14.6315
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,922,984181,9.3682
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,21,984181,0.2134
+2024,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,rm,,,,10190,4632711,21.9958
+2024,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,rm,,,,9623,4632711,20.7719
+2024,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,rm,,,,6075,4632711,13.1133
+2024,21,Tasa de egresos hospitalarios por diabetes mellitus,rm,,,,5135,4632711,11.0842
+2024,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,rm,,,,166,4632711,0.3583
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13101,642,228481,28.0986
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13101,633,228481,27.7047
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13101,303,228481,13.2615
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13101,240,228481,10.5042
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13101,7,228481,0.3064
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13102,130,44654,29.1127
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13102,120,44654,26.8733
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13102,77,44654,17.2437
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13102,70,44654,15.6761
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13102,2,44654,0.4479
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13103,352,107383,32.7799
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13103,214,107383,19.9287
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13103,179,107383,16.6693
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13103,171,107383,15.9243
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13103,0,107383,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13104,216,102677,21.0368
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13104,177,102677,17.2385
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13104,103,102677,10.0315
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13104,92,102677,8.9601
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13104,9,102677,0.8765
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13105,269,150936,17.8221
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13105,234,150936,15.5033
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13105,206,150936,13.6482
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13105,211,150936,13.9794
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13105,1,150936,0.0663
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13106,231,82615,27.961
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13106,236,82615,28.5662
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13106,149,82615,18.0355
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13106,86,82615,10.4097
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13106,4,82615,0.4842
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13107,119,63570,18.7195
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13107,78,63570,12.2699
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13107,67,63570,10.5396
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13107,62,63570,9.753
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13107,5,63570,0.7865
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13108,156,77144,20.2219
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13108,122,77144,15.8146
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13108,71,77144,9.2036
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13108,79,77144,10.2406
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13108,17,77144,2.2037
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13109,138,63460,21.746
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13109,121,63460,19.0671
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13109,72,63460,11.3457
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13109,53,63460,8.3517
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13109,3,63460,0.4727
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,525,299668,17.5194
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,1042,299668,34.7718
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,399,299668,13.3147
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,236,299668,7.8754
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13110,4,299668,0.1335
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,237,121355,19.5295
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,276,121355,22.7432
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,108,121355,8.8995
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,79,121355,6.5098
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13111,4,121355,0.3296
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,342,134261,25.4728
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,368,134261,27.4093
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,156,134261,11.6192
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,128,134261,9.5337
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13112,1,134261,0.0745
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13113,123,37454,32.8403
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13113,106,37454,28.3014
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13113,68,37454,18.1556
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13113,31,37454,8.2768
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13113,2,37454,0.534
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13114,270,74530,36.227
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13114,215,74530,28.8474
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13114,142,74530,19.0527
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13114,57,74530,7.6479
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13114,6,74530,0.805
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13115,83,38275,21.6852
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13115,81,38275,21.1626
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13115,55,38275,14.3697
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13115,34,38275,8.8831
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13115,1,38275,0.2613
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13116,147,82860,17.7408
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13116,149,82860,17.9821
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13116,100,82860,12.0685
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13116,68,82860,8.2066
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13116,2,82860,0.2414
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13117,159,113207,14.0451
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13117,106,113207,9.3634
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13117,117,113207,10.335
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13117,120,113207,10.6001
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13117,2,113207,0.1767
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13118,198,112860,17.5439
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13118,199,112860,17.6325
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13118,142,112860,12.582
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13118,133,112860,11.7845
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13118,6,112860,0.5316
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,11,Servicio de Salud Metropolitano Central,13119,747,261784,28.535
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,11,Servicio de Salud Metropolitano Central,13119,712,261784,27.198
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,11,Servicio de Salud Metropolitano Central,13119,366,261784,13.981
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,11,Servicio de Salud Metropolitano Central,13119,344,261784,13.1406
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,11,Servicio de Salud Metropolitano Central,13119,10,261784,0.382
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13120,252,82372,30.5929
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13120,233,82372,28.2863
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13120,144,82372,17.4817
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13120,100,82372,12.14
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13120,6,82372,0.7284
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13121,147,95915,15.3261
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13121,150,95915,15.6388
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13121,85,95915,8.862
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13121,81,95915,8.445
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13121,0,95915,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13122,427,179363,23.8065
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13122,368,179363,20.5171
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13122,287,179363,16.0011
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13122,324,179363,18.0639
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13122,7,179363,0.3903
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13123,160,65525,24.4182
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13123,146,65525,22.2816
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13123,66,65525,10.0725
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13123,35,65525,5.3415
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13123,2,65525,0.3052
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13124,284,178795,15.8841
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13124,226,178795,12.6402
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13124,188,178795,10.5148
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13124,231,178795,12.9198
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13124,9,178795,0.5034
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13125,183,137833,13.2769
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13125,173,137833,12.5514
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13125,114,137833,8.2709
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13125,104,137833,7.5454
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13125,9,137833,0.653
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13126,239,84264,28.3632
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13126,177,84264,21.0054
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13126,141,84264,16.7331
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13126,132,84264,15.6651
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13126,1,84264,0.1187
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13127,259,113968,22.7257
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13127,180,113968,15.7939
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13127,109,113968,9.5641
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13127,129,113968,11.319
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13127,13,113968,1.1407
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13128,291,117431,24.7805
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13128,197,117431,16.7758
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13128,168,117431,14.3063
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13128,193,117431,16.4352
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13128,1,117431,0.0852
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13129,163,82834,19.6779
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13129,113,82834,13.6417
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13129,61,82834,7.3641
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13129,57,82834,6.8812
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13129,5,82834,0.6036
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13130,132,86065,15.3372
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13130,122,86065,14.1753
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13130,61,86065,7.0877
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13130,37,86065,4.2991
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13130,2,86065,0.2324
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,155,70413,22.013
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,197,70413,27.9778
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,75,70413,10.6514
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,46,70413,6.5329
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13131,0,70413,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,12,Servicio de Salud Metropolitano Oriente,13132,37,18257,20.2662
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,12,Servicio de Salud Metropolitano Oriente,13132,37,18257,20.2662
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,12,Servicio de Salud Metropolitano Oriente,13132,29,18257,15.8843
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,12,Servicio de Salud Metropolitano Oriente,13132,11,18257,6.0251
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,12,Servicio de Salud Metropolitano Oriente,13132,0,18257,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,818,357370,22.8894
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,1103,357370,30.8644
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,617,357370,17.265
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,340,357370,9.5139
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13201,7,357370,0.1959
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,28,21196,13.21
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,42,21196,19.8151
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,27,21196,12.7383
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,16,21196,7.5486
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13202,0,21196,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,20,8045,24.8602
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,31,8045,38.5333
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,37,8045,45.9913
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,18,8045,22.3741
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,14,Servicio de Salud Metropolitano Sur Oriente,13203,0,8045,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13301,116,99834,11.6193
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13301,151,99834,15.1251
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13301,57,99834,5.7095
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13301,83,99834,8.3138
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13301,3,99834,0.3005
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13302,127,65919,19.2661
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13302,92,65919,13.9565
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13302,49,65919,7.4334
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13302,57,65919,8.647
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13302,0,65919,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,09,Servicio de Salud Metropolitano Norte,13303,38,13686,27.7656
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,09,Servicio de Salud Metropolitano Norte,13303,35,13686,25.5736
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,09,Servicio de Salud Metropolitano Norte,13303,17,13686,12.4215
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,09,Servicio de Salud Metropolitano Norte,13303,22,13686,16.0748
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,09,Servicio de Salud Metropolitano Norte,13303,1,13686,0.7307
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13401,446,208829,21.3572
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13401,382,208829,18.2925
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13401,219,208829,10.487
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13401,311,208829,14.8926
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13401,3,208829,0.1437
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13402,136,80109,16.9769
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13402,161,80109,20.0976
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13402,74,80109,9.2374
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13402,68,80109,8.4884
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13402,1,80109,0.1248
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13403,29,16420,17.6614
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13403,29,16420,17.6614
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13403,15,16420,9.1352
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13403,14,16420,8.5262
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13403,0,16420,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,13,Servicio de Salud Metropolitano Sur,13404,108,60447,17.8669
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,13,Servicio de Salud Metropolitano Sur,13404,106,60447,17.536
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,13,Servicio de Salud Metropolitano Sur,13404,48,60447,7.9408
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,13,Servicio de Salud Metropolitano Sur,13404,63,60447,10.4224
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,13,Servicio de Salud Metropolitano Sur,13404,0,60447,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13501,252,102995,24.4672
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13501,189,102995,18.3504
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13501,130,102995,12.622
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13501,150,102995,14.5638
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13501,3,102995,0.2913
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13502,12,7069,16.9755
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13502,7,7069,9.9024
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13502,3,7069,4.2439
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13502,10,7069,14.1463
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13502,0,7069,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13503,90,19943,45.1286
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13503,55,19943,27.5786
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13503,45,19943,22.5643
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13503,59,19943,29.5843
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13503,0,19943,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13504,11,13461,8.1718
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13504,17,13461,12.6291
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13504,9,13461,6.686
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13504,9,13461,6.686
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13504,0,13461,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13505,9,12080,7.4503
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13505,8,12080,6.6225
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13505,10,12080,8.2781
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13505,6,12080,4.9669
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13505,0,12080,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13601,144,49816,28.9064
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13601,118,49816,23.6872
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13601,58,49816,11.6428
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13601,98,49816,19.6724
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13601,1,49816,0.2007
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13602,61,28636,21.3019
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13602,60,28636,20.9526
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13602,25,28636,8.7303
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13602,41,28636,14.3176
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13602,0,28636,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13603,72,29787,24.1716
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13603,39,29787,13.093
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13603,26,29787,8.7286
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13603,53,29787,17.793
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13603,0,29787,0.0
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13604,109,46597,23.3921
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13604,59,46597,12.6618
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13604,58,46597,12.4472
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13604,56,46597,12.0179
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13604,1,46597,0.2146
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,comuna,10,Servicio de Salud Metropolitano Occidente,13605,180,68941,26.1093
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,comuna,10,Servicio de Salud Metropolitano Occidente,13605,100,68941,14.5052
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,comuna,10,Servicio de Salud Metropolitano Occidente,13605,90,68941,13.0546
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,comuna,10,Servicio de Salud Metropolitano Occidente,13605,90,68941,13.0546
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,comuna,10,Servicio de Salud Metropolitano Occidente,13605,3,68941,0.4352
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,09,Servicio de Salud Metropolitano Norte,,1214,674631,17.995
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,09,Servicio de Salud Metropolitano Norte,,1008,674631,14.9415
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,09,Servicio de Salud Metropolitano Norte,,587,674631,8.7011
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,09,Servicio de Salud Metropolitano Norte,,628,674631,9.3088
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,09,Servicio de Salud Metropolitano Norte,,57,674631,0.8449
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,2265,980405,23.1027
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1572,980405,16.0342
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1247,980405,12.7192
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,1419,980405,14.4736
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,10,Servicio de Salud Metropolitano Occidente,,21,980405,0.2142
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,11,Servicio de Salud Metropolitano Central,,1750,617534,28.3385
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,11,Servicio de Salud Metropolitano Central,,1701,617534,27.545
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,11,Servicio de Salud Metropolitano Central,,895,617534,14.4931
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,11,Servicio de Salud Metropolitano Central,,740,617534,11.9831
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,11,Servicio de Salud Metropolitano Central,,23,617534,0.3724
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,1550,608636,25.4668
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,1385,608636,22.7558
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,933,608636,15.3294
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,725,608636,11.9119
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,12,Servicio de Salud Metropolitano Oriente,,30,608636,0.4929
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,13,Servicio de Salud Metropolitano Sur,,1715,927875,18.4831
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,13,Servicio de Salud Metropolitano Sur,,1567,927875,16.8881
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,13,Servicio de Salud Metropolitano Sur,,941,927875,10.1415
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,13,Servicio de Salud Metropolitano Sur,,963,927875,10.3786
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,13,Servicio de Salud Metropolitano Sur,,17,927875,0.1832
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,2125,1012308,20.9916
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,3059,1012308,30.2181
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,1419,1012308,14.0175
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,863,1012308,8.5251
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,servicio_salud,14,Servicio de Salud Metropolitano Sur Oriente,,16,1012308,0.1581
+2025,18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,rm,,,,10619,4821389,22.0248
+2025,19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,rm,,,,10292,4821389,21.3465
+2025,20,Tasa de egresos hospitalarios por insuficiencia cardíaca,rm,,,,6022,4821389,12.4902
+2025,21,Tasa de egresos hospitalarios por diabetes mellitus,rm,,,,5338,4821389,11.0715
+2025,22,Tasa de egresos hospitalarios por amputación extremidad inferior en diabetes,rm,,,,164,4821389,0.3402

@@ -1,0 +1,65 @@
+rem,seccion,seccion_nombre,codigo_prestacion,detalle_prestacion,detalle_niveles,fila_excel
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - PERSONAS BAJO CONTROL,P4150100,Numero de personas en PSCV,Numero de personas en PSCV,1
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - CLASIFICACION RIESGO,P4190100,Clasificacion del Riesgo Cardiovascular - Bajo,Clasificacion del Riesgo Cardiovascular - Bajo,2
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - PERSONAS BAJO CONTROL,P4150601,Hipertension Arterial (HTA),Hipertension Arterial (HTA),3
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - PERSONAS BAJO CONTROL,P4150602,Diabetes Mellitus tipo 2 (DM2),Diabetes Mellitus tipo 2 (DM2),4
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - PERSONAS BAJO CONTROL,P4150603,Dislipidemia,Dislipidemia,5
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4150701,Riesgo Cardiovascular Bajo (solo HTA),Riesgo Cardiovascular Bajo (solo HTA),6
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4150703,Riesgo Cardiovascular Moderado (solo HTA),Riesgo Cardiovascular Moderado (solo HTA),7
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4150801,Riesgo Cardiovascular Alto (solo HTA),Riesgo Cardiovascular Alto (solo HTA),8
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4170300,Riesgo Cardiovascular Moderado,Riesgo Cardiovascular Moderado,9
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4190500,Riesgo Cardiovascular Alto,Riesgo Cardiovascular Alto,10
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4190600,Riesgo Cardiovascular Maximo,Riesgo Cardiovascular Maximo,11
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - RIESGO CARDIOVASCULAR,P4190809,Riesgo Cardiovascular Bajo,Riesgo Cardiovascular Bajo,12
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190800,Poblacion con evaluacion de riesgo cardiovascular,Poblacion con evaluacion de riesgo cardiovascular,13
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190801,Riesgo Cardiovascular Muy Bajo (HEARTS),Riesgo Cardiovascular Muy Bajo (HEARTS),14
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190803,Riesgo Cardiovascular Bajo (HEARTS),Riesgo Cardiovascular Bajo (HEARTS),15
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190804,Riesgo Cardiovascular Moderado (HEARTS),Riesgo Cardiovascular Moderado (HEARTS),16
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190805,Riesgo Cardiovascular Alto (HEARTS),Riesgo Cardiovascular Alto (HEARTS),17
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190806,Riesgo Cardiovascular Muy Alto (HEARTS),Riesgo Cardiovascular Muy Alto (HEARTS),18
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190807,SCORE HEARTS sin RCV,SCORE HEARTS sin RCV,19
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190808,Indice de Madurez HEARTS,Indice de Madurez HEARTS,20
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190810,Clasificacion HEARTS por grupo etario,Clasificacion HEARTS por grupo etario,21
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190811,Puntuacion SCORE HEARTS,Puntuacion SCORE HEARTS,22
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - HEARTS,P4190812,Heart age (Edad cardiovascular),Heart age (Edad cardiovascular),23
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ANTECEDENTES,P4190900,Antecedentes de Infarto Agudo al Miocardio (IAM),Antecedentes de Infarto Agudo al Miocardio (IAM),24
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ANTECEDENTES,P4190910,Antecedentes de Enfermedad Cerebrovascular (ACV),Antecedentes de Enfermedad Cerebrovascular (ACV),25
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4200300,Personas con ERC estadio 3b 4 y 5,Personas con ERC estadio 3b 4 y 5,26
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4200600,Personas en PSCV con ERC (categorias G3b G4 y G5),Personas en PSCV con ERC (categorias G3b G4 y G5),27
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4200800,Personas con ERC con IECA o ARA II,Personas con ERC con IECA o ARA II,28
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4200900,Tratamiento con farmacos ahorradores de nefronas,Tratamiento con farmacos ahorradores de nefronas,29
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4201100,Personas con ERC con VFG descendiendo rapidamente,Personas con ERC con VFG descendiendo rapidamente,30
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4201200,Personas con ERC en lista de espera de trasplante,Personas con ERC en lista de espera de trasplante,31
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4201500,Personas con ERC con hemoglobina baja,Personas con ERC con hemoglobina baja,32
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4201600,Personas en PSCV con diagnostico de ERC,Personas en PSCV con diagnostico de ERC,33
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - ERC,P4201700,Personas con ERC estadio 3b con filtrado descendiendo,Personas con ERC estadio 3b con filtrado descendiendo,34
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301010,ERC estadio 3a con VFGe,ERC estadio 3a con VFGe,35
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301020,ERC estadio 3b con VFGe,ERC estadio 3b con VFGe,36
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301030,ERC estadio 4 con VFGe,ERC estadio 4 con VFGe,37
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301040,DM con VFGe y RAC vigente,DM con VFGe y RAC vigente,38
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301050,ERC estadio 5 con VFGe,ERC estadio 5 con VFGe,39
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301060,ERC estadio 3a con RAC,ERC estadio 3a con RAC,40
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301070,ERC estadio 3b con RAC,ERC estadio 3b con RAC,41
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - LABORATORIO,P4301080,HTA con VFGe y RAC vigente,HTA con VFGe y RAC vigente,42
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - DERIVACIONES,P4302100,Personas con ERC controladas en atencion primaria,Personas con ERC controladas en atencion primaria,43
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - DERIVACIONES,P4302101,Personas con ERC derivadas a nefrologia,Personas con ERC derivadas a nefrologia,44
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - DERIVACIONES,P4302102,Personas en PSCV controladas en atencion primaria,Personas en PSCV controladas en atencion primaria,45
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - DERIVACIONES,P4302103,Personas en PSCV derivadas a cardiologia,Personas en PSCV derivadas a cardiologia,46
+P4,A,PROGRAMA SALUD CARDIOVASCULAR - DERIVACIONES,P4302104,Personas en PSCV sin ERC controladas en APS,Personas en PSCV sin ERC controladas en APS,47
+P4,B,METAS DE COMPENSACION - CONTROL HTA,P4180200,PA menor 140/90 mmHg,PA menor 140/90 mmHg,48
+P4,B,METAS DE COMPENSACION - CONTROL HTA,P4200100,PA menor 150/90 mmHg (80 mas anos),PA menor 150/90 mmHg (80 mas anos),49
+P4,B,METAS DE COMPENSACION - CONTROL HTA,P4180500,PA menor 130/80 mmHg,PA menor 130/80 mmHg,50
+P4,B,METAS DE COMPENSACION - CONTROL DM2,P4180300,HbA1C menor 7%,HbA1C menor 7%,51
+P4,B,METAS DE COMPENSACION - CONTROL DM2,P4200200,HbA1C menor 8% (80 mas anos),HbA1C menor 8% (80 mas anos),52
+P4,B,METAS DE COMPENSACION - CONTROL DM2,P4190970,HbA1C menor 7% segun edad,HbA1C menor 7% segun edad,53
+P4,B,METAS DE COMPENSACION - CONTROL DM2,P4190960,Con HbA1C mayor igual 9% (muy descompensada),Con HbA1C mayor igual 9% (muy descompensada),54
+P4,B,METAS DE COMPENSACION - TRATAMIENTO,P4180800,En tratamiento con Insulina,En tratamiento con Insulina,55
+P4,B,METAS DE COMPENSACION - TRATAMIENTO,P4200700,En tratamiento con Insulina que logra meta HbA1C segun edad,En tratamiento con Insulina que logra meta HbA1C segun edad,56
+P4,B,METAS DE COMPENSACION - TRATAMIENTO,P4190920,HbA1C menor 7% - PA menor 140/90 mmHg y Colesterol LDL menor 100 mg/dl (Triple meta),HbA1C menor 7% - PA menor 140/90 mmHg y Colesterol LDL menor 100 mg/dl (Triple meta),57
+P4,B,METAS DE COMPENSACION - TRATAMIENTO,P4190930,En tratamiento con Antiagregantes plaquetarios,En tratamiento con Antiagregantes plaquetarios,58
+P4,B,METAS DE COMPENSACION - TRATAMIENTO,P4190940,En tratamiento con Estatina,En tratamiento con Estatina,59
+P4,B,METAS DE COMPENSACION - EXAMENES,P4190950,Con Fondo de Ojo vigente (DM2),Con Fondo de Ojo vigente (DM2),60
+P4,B,METAS DE COMPENSACION - EXAMENES,P4301040,DM con VFGe y RAC vigente,DM con VFGe y RAC vigente,61
+P4,B,METAS DE COMPENSACION - EXAMENES,P4301080,HTA con VFGe y RAC vigente,HTA con VFGe y RAC vigente,62
+P4,B,METAS DE COMPENSACION - EXAMENES,P4200500,Personas con DM2 con Fondo de Ojo vigente (menor a 2 anos),Personas con DM2 con Fondo de Ojo vigente (menor a 2 anos),63
+P4,C,VARIABLES DE SEGUIMIENTO,P4200400,Con Presion Arterial mayor igual 160/100 mmHg,Con Presion Arterial mayor igual 160/100 mmHg,64

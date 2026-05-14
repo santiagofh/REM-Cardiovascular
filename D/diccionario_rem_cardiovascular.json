@@ -1,0 +1,561 @@
+{
+  "region_objetivo": "13",
+  "anio": 2025,
+  "input_paths": {
+    "maestro_establecimientos": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "series_a": {
+      "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieA2024.csv",
+      "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieA2025.csv"
+    },
+    "series_p": {
+      "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieP2024.csv",
+      "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieP2025.csv"
+    },
+    "diccionarios_sa": {
+      "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Diccionarios\\DICCIONARIO CODIGOS SA_24_V1.1.xlsm",
+      "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Diccionarios\\DICCIONARIO CODIGOS SA_25_V1.5.xlsm"
+    },
+    "diccionarios_sp": {
+      "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Diccionarios\\DICCIONARIO CODIGOS SP_24_V1.1.xlsm",
+      "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Diccionarios\\DICCIONARIO CODIGOS SP_25_V1.0.xlsm"
+    }
+  },
+  "poblacion_inscrita": {
+    "fuente": "FONASA T8009 - Poblacion Inscrita Validada APS RM",
+    "diccionario_poblacion": "diccionario_poblacion_inscrita.json",
+    "anio_base": 2025,
+    "prevalencias": {
+      "hta": {
+        "nombre": "Hipertension Arterial",
+        "prevalencia_pct": 27.6,
+        "fuente": "ENS 2016-2017"
+      },
+      "dm2": {
+        "nombre": "Diabetes Mellitus tipo 2",
+        "prevalencia_pct": 12.3,
+        "fuente": "ENS 2016-2017"
+      }
+    }
+  },
+  "REM A05": {
+    "SECCION H: INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV)": {
+      "columnas": {
+        "COL01": "TOTAL",
+        "COL02": "RANGO ETARIO - Menos de 15 años",
+        "COL03": "RANGO ETARIO - 15 - 19 años",
+        "COL04": "RANGO ETARIO - 20 - 24 años",
+        "COL05": "RANGO ETARIO - 25 - 29 años",
+        "COL06": "RANGO ETARIO - 30 - 34 años",
+        "COL07": "RANGO ETARIO - 35 - 39 años",
+        "COL08": "RANGO ETARIO - 40 - 44 años",
+        "COL09": "RANGO ETARIO - 45 - 49 años",
+        "COL10": "RANGO ETARIO - 50 - 54 años",
+        "COL11": "RANGO ETARIO - 55 - 59 años",
+        "COL12": "RANGO ETARIO - 60 - 64 años",
+        "COL13": "RANGO ETARIO - 65 - 69 años",
+        "COL14": "RANGO ETARIO - 70 - 74 años",
+        "COL15": "RANGO ETARIO - 75 - 79 años",
+        "COL16": "RANGO ETARIO - 80 y más años",
+        "COL17": "Sexo - Hombres",
+        "COL18": "Sexo - Mujeres",
+        "COL19": "Pueblos Originarios",
+        "COL20": "Migrantes"
+      },
+      "codigos": {
+        "03030360": "Ingresos al PSCV",
+        "03021106": "Programa de Salud Cardiovascular - Hipertensión Arterial",
+        "03021107": "Programa de Salud Cardiovascular - Diabetes Mellitus",
+        "03021108": "Programa de Salud Cardiovascular - Dislipidemia",
+        "05990071": "Programa de Salud Cardiovascular - Antecedentes de Infarto Agudo al Miocardio (IAM)",
+        "05990072": "Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)",
+        "09600292": "Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV)",
+        "09600293": "Programa de Salud Cardiovascular - Enfermedad Renal Crónica",
+        "05810432": "Programa de Salud Cardiovascular - Tabaquismo ≥ 55 años",
+        "09600294": "Protocolo HEARTS"
+      }
+    },
+    "SECCION I: EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV)": {
+      "columnas": {
+        "COL01": "TOTAL",
+        "COL02": "RANGO ETARIO - Menos de 15 años",
+        "COL03": "RANGO ETARIO - 15 - 19 años",
+        "COL04": "RANGO ETARIO - 20 - 24 años",
+        "COL05": "RANGO ETARIO - 25 - 29 años",
+        "COL06": "RANGO ETARIO - 30 - 34 años",
+        "COL07": "RANGO ETARIO - 35 - 39 años",
+        "COL08": "RANGO ETARIO - 40 - 44 años",
+        "COL09": "RANGO ETARIO - 45 - 49 años",
+        "COL10": "RANGO ETARIO - 50 - 54 años",
+        "COL11": "RANGO ETARIO - 55 - 59 años",
+        "COL12": "RANGO ETARIO - 60 - 64 años",
+        "COL13": "RANGO ETARIO - 65 - 69 años",
+        "COL14": "RANGO ETARIO - 70 - 74 años",
+        "COL15": "RANGO ETARIO - 75 - 79 años",
+        "COL16": "RANGO ETARIO - 80 y más años",
+        "COL17": "Sexo - Hombres",
+        "COL18": "Sexo - Mujeres",
+        "COL19": "Pueblos Originarios",
+        "COL20": "Migrantes"
+      },
+      "codigos": {
+        "05810040": "Egresos del PSCV",
+        "05225400": "Programa de Salud Cardiovascular - Hipertensión Arterial",
+        "05225401": "Programa de Salud Cardiovascular - Diabetes Mellitus",
+        "05225402": "Programa de Salud Cardiovascular - Dislipidemia",
+        "05990073": "Programa de Salud Cardiovascular - Antecedentes Infarto Agudo al Miocardio (IAM)",
+        "05990074": "Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)",
+        "09600295": "Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV)",
+        "09600296": "Programa de Salud Cardiovascular - Enfermedad Renal Crónica",
+        "05810434": "Programa de Salud Cardiovascular - Tabaquismo ≥ 55 años"
+      }
+    }
+  },
+  "REM P4": {
+    "SECCION A: PROGRAMA SALUD CARDIOVASCULAR (PSCV) - PERSONAS BAJO CONTROL SEGUN PATOLOGIA Y FACTORES DE RIESGO": {
+      "columnas": {
+        "COL01": "TOTAL - Ambos sexos",
+        "COL02": "TOTAL - Hombres",
+        "COL03": "TOTAL - Mujeres",
+        "COL04": "15 a 19 años - Hombres",
+        "COL05": "15 a 19 años - Mujeres",
+        "COL06": "20 a 24 años - Hombres",
+        "COL07": "20 a 24 años - Mujeres",
+        "COL08": "25 a 29 años - Hombres",
+        "COL09": "25 a 29 años - Mujeres",
+        "COL10": "30 a 34 años - Hombres",
+        "COL11": "30 a 34 años - Mujeres",
+        "COL12": "35 a 39 años - Hombres",
+        "COL13": "35 a 39 años - Mujeres",
+        "COL14": "40 a 44 años - Hombres",
+        "COL15": "40 a 44 años - Mujeres",
+        "COL16": "45 a 49 años - Hombres",
+        "COL17": "45 a 49 años - Mujeres",
+        "COL18": "50 a 54 años - Hombres",
+        "COL19": "50 a 54 años - Mujeres",
+        "COL20": "55 a 59 años - Hombres",
+        "COL21": "55 a 59 años - Mujeres",
+        "COL22": "60 a 64 años - Hombres",
+        "COL23": "60 a 64 años - Mujeres",
+        "COL24": "65 a 69 años - Hombres",
+        "COL25": "65 a 69 años - Mujeres",
+        "COL26": "70 a 74 años - Hombres",
+        "COL27": "70 a 74 años - Mujeres",
+        "COL28": "75 a 79 años - Hombres",
+        "COL29": "75 a 79 años - Mujeres",
+        "COL30": "80 y más años - Hombres",
+        "COL31": "80 y más años - Mujeres",
+        "COL32": "Pueblos Originarios - Hombres",
+        "COL33": "Pueblos Originarios - Mujeres",
+        "COL34": "Migrantes - Hombres",
+        "COL35": "Migrantes - Mujeres"
+      },
+      "codigos_p4": {
+        "P4150100": "Numero de personas en PSCV",
+        "P4150601": "Hipertension Arterial (HTA)",
+        "P4150602": "Diabetes Mellitus tipo 2 (DM2)",
+        "P4150603": "Dislipidemia",
+        "P4150701": "Riesgo Cardiovascular - Bajo (solo HTA)",
+        "P4150703": "Riesgo Cardiovascular - Moderado (solo HTA)",
+        "P4150801": "Riesgo Cardiovascular - Alto (solo HTA)",
+        "P4170300": "Riesgo Cardiovascular - Moderado",
+        "P4190500": "Riesgo Cardiovascular - Alto",
+        "P4190600": "Riesgo Cardiovascular - Maximo",
+        "P4190800": "Poblacion con evaluacion de riesgo cardiovascular",
+        "P4190801": "Riesgo Cardiovascular - Muy Bajo (HEARTS)",
+        "P4190803": "Riesgo Cardiovascular - Bajo (HEARTS)",
+        "P4190804": "Riesgo Cardiovascular - Moderado (HEARTS)",
+        "P4190805": "Riesgo Cardiovascular - Alto (HEARTS)",
+        "P4190806": "Riesgo Cardiovascular - Muy Alto (HEARTS)",
+        "P4190807": "Riesgo Cardiovascular - SCORE HEARTS sin RCV",
+        "P4190808": "Indice de Madurez HEARTS",
+        "P4190809": "Riesgo Cardiovascular - Bajo",
+        "P4190810": "Clasificacion HEARTS por grupo etario",
+        "P4190811": "Puntuacion SCORE HEARTS",
+        "P4190812": "Heart age (Edad cardiovascular)",
+        "P4190900": "Antecedentes de Infarto Agudo al Miocardio (IAM)",
+        "P4190910": "Antecedentes de Enfermedad Cerebrovascular (ACV)",
+        "P4200300": "Personas con ERC estadio 3b, 4 y 5",
+        "P4200500": "Personas con DM2 con Fondo de Ojo vigente (menor a 2 años)",
+        "P4200600": "Personas en PSCV con ERC (categorias G3b, G4 y G5)",
+        "P4200800": "Personas con ERC con IECA o ARA II",
+        "P4200900": "Tratamiento con farmacos ahorradores de nefronas",
+        "P4201100": "Personas con ERC con VFG descendiendo rapidamente",
+        "P4201200": "Personas con ERC en lista de espera de trasplante",
+        "P4201500": "Personas con ERC con hemoglobina baja (>13/12)",
+        "P4201600": "Personas en PSCV con diagnostico de ERC",
+        "P4201700": "Personas con ERC estadio 3b con filtrado descendiendo",
+        "P4301010": "ERC estadio 3a con VFGe",
+        "P4301020": "ERC estadio 3b con VFGe",
+        "P4301030": "ERC estadio 4 con VFGe",
+        "P4301040": "DM con VFGe y RAC vigente",
+        "P4301050": "ERC estadio 5 con VFGe",
+        "P4301060": "ERC estadio 3a con RAC",
+        "P4301070": "ERC estadio 3b con RAC",
+        "P4301080": "HTA con VFGe y RAC vigente",
+        "P4302100": "Personas con ERC controladas en atencion primaria",
+        "P4302101": "Personas con ERC derivadas a nefrologia",
+        "P4302102": "Personas en PSCV controladas en atencion primaria",
+        "P4302103": "Personas en PSCV derivadas a cardiologia",
+        "P4302104": "Personas en PSCV sin ERC controladas en APS"
+      }
+    },
+    "SECCION B: METAS DE COMPENSACION": {
+      "columnas": {
+        "COL01": "TOTAL - Ambos sexos",
+        "COL02": "TOTAL - Hombres",
+        "COL03": "TOTAL - Mujeres",
+        "COL04": "15 a 19 años - Hombres",
+        "COL05": "15 a 19 años - Mujeres",
+        "COL06": "20 a 24 años - Hombres",
+        "COL07": "20 a 24 años - Mujeres",
+        "COL08": "25 a 29 años - Hombres",
+        "COL09": "25 a 29 años - Mujeres",
+        "COL10": "30 a 34 años - Hombres",
+        "COL11": "30 a 34 años - Mujeres",
+        "COL12": "35 a 39 años - Hombres",
+        "COL13": "35 a 39 años - Mujeres",
+        "COL14": "40 a 44 años - Hombres",
+        "COL15": "40 a 44 años - Mujeres",
+        "COL16": "45 a 49 años - Hombres",
+        "COL17": "45 a 49 años - Mujeres",
+        "COL18": "50 a 54 años - Hombres",
+        "COL19": "50 a 54 años - Mujeres",
+        "COL20": "55 a 59 años - Hombres",
+        "COL21": "55 a 59 años - Mujeres",
+        "COL22": "60 a 64 años - Hombres",
+        "COL23": "60 a 64 años - Mujeres",
+        "COL24": "65 a 69 años - Hombres",
+        "COL25": "65 a 69 años - Mujeres",
+        "COL26": "70 a 74 años - Hombres",
+        "COL27": "70 a 74 años - Mujeres",
+        "COL28": "75 a 79 años - Hombres",
+        "COL29": "75 a 79 años - Mujeres",
+        "COL30": "80 y más años - Hombres",
+        "COL31": "80 y más años - Mujeres",
+        "COL32": "Pueblos Originarios - Hombres",
+        "COL33": "Pueblos Originarios - Mujeres",
+        "COL34": "Migrantes - Hombres",
+        "COL35": "Migrantes - Mujeres"
+      },
+      "codigos_p4": {
+        "P4180200": "PA < 140/90 mmHg (Personas bajo control HTA con PA controlada)",
+        "P4180300": "HbA1C < 7% (Personas bajo control DM2 con HbA1c controlada)",
+        "P4190920": "HbA1C < 7% - PA < 140/90 mmHg y Colesterol LDL < 100 mg/dl (Triple meta)",
+        "P4190930": "En tratamiento con Antiagregantes plaquetarios",
+        "P4190940": "En tratamiento con Estatina",
+        "P4190950": "Con Fondo de Ojo vigente (DM2)",
+        "P4180500": "PA < 130/80 mmHg",
+        "P4190970": "HbA1C < 7% segun edad (DM2 compensada por edad)",
+        "P4200100": "PA < 150/90 mmHg (Personas bajo control HTA >= 80 años)",
+        "P4200200": "HbA1C < 8% (Personas bajo control DM2 >= 80 años)",
+        "P4180800": "En tratamiento con Insulina",
+        "P4200700": "En tratamiento con Insulina que logra meta con HbA1C segun edad",
+        "P4190960": "Con HbA1C >= 9% (DM2 muy descompensada)"
+      }
+    },
+    "SECCION C: VARIABLES DE SEGUIMIENTO DEL PSCV AL CORTE": {
+      "columnas": {
+        "COL01": "TOTAL - Ambos sexos",
+        "COL02": "TOTAL - Hombres",
+        "COL03": "TOTAL - Mujeres",
+        "COL04": "15 a 19 años - Hombres",
+        "COL05": "15 a 19 años - Mujeres",
+        "COL06": "20 a 24 años - Hombres",
+        "COL07": "20 a 24 años - Mujeres",
+        "COL08": "25 a 29 años - Hombres",
+        "COL09": "25 a 29 años - Mujeres",
+        "COL10": "30 a 34 años - Hombres",
+        "COL11": "30 a 34 años - Mujeres",
+        "COL12": "35 a 39 años - Hombres",
+        "COL13": "35 a 39 años - Mujeres",
+        "COL14": "40 a 44 años - Hombres",
+        "COL15": "40 a 44 años - Mujeres",
+        "COL16": "45 a 49 años - Hombres",
+        "COL17": "45 a 49 años - Mujeres",
+        "COL18": "50 a 54 años - Hombres",
+        "COL19": "50 a 54 años - Mujeres",
+        "COL20": "55 a 59 años - Hombres",
+        "COL21": "55 a 59 años - Mujeres",
+        "COL22": "60 a 64 años - Hombres",
+        "COL23": "60 a 64 años - Mujeres",
+        "COL24": "65 a 69 años - Hombres",
+        "COL25": "65 a 69 años - Mujeres",
+        "COL26": "70 a 74 años - Hombres",
+        "COL27": "70 a 74 años - Mujeres",
+        "COL28": "75 a 79 años - Hombres",
+        "COL29": "75 a 79 años - Mujeres",
+        "COL30": "80 y más años - Hombres",
+        "COL31": "80 y más años - Mujeres",
+        "COL32": "Pueblos Originarios - Hombres",
+        "COL33": "Pueblos Originarios - Mujeres",
+        "COL34": "Migrantes - Hombres",
+        "COL35": "Migrantes - Mujeres"
+      },
+      "codigos_p4": {
+        "P4200400": "Con Presion Arterial igual o Mayor a 160/100 mmHg (HTA muy descompensada)",
+        "P4190100": "Clasificacion del Riesgo Cardiovascular"
+      }
+    }
+  },
+  "indicadores": [
+    {
+      "id": 1,
+      "nombre": "Cobertura de hipertension arterial (HTA)",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150601"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Poblacion inscrita validada FONASA de 15 años y mas x prevalencia HTA segun ENS (27.6%)"
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 2,
+      "nombre": "Control de HTA",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4180200", "P4200100"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150601"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 3,
+      "nombre": "Cobertura efectiva (tasa de control poblacional) de HTA",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4180200", "P4200100"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Poblacion inscrita validada FONASA de 15 años y mas x prevalencia HTA"
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 4,
+      "nombre": "Porcentaje de personas con diagnostico de HTA muy descompensadas",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion C",
+        "codigos": ["P4200400"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150601"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 5,
+      "nombre": "Cobertura de evaluacion del Indice de Madurez HEARTS",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4190808"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150601"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 6,
+      "nombre": "Cobertura de diabetes mellitus tipo 2 (DM2)",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Poblacion inscrita validada FONASA de 15 años y mas x prevalencia DM2"
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 7,
+      "nombre": "Control de DM2",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4180300", "P4200200"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 8,
+      "nombre": "Cobertura efectiva (tasa de control poblacional) de DM2",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4180300", "P4200200"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Poblacion inscrita validada FONASA de 15 años y mas x prevalencia DM2"
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 9,
+      "nombre": "Porcentaje de personas con diagnostico de DM2 muy descompensadas",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4190960"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 10,
+      "nombre": "Porcentaje de personas con diagnostico de DM2 compensada usuarias de insulina",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4200700"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4180800"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 11,
+      "nombre": "Porcentaje de personas con diagnostico de DM2 con evaluacion de pie diabetico vigente",
+      "numerador": {
+        "fuente": "Serie P -> REM P4"
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 12,
+      "nombre": "Porcentaje de personas con diagnostico de DM2 con evaluacion de fondo de ojo vigente",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4190950"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 13,
+      "nombre": "Porcentaje de personas con diagnostico de HTA con evaluacion de funcion renal",
+      "numerador": {
+        "fuente": "Serie P -> REM P4",
+        "codigos": ["P4301080"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150601"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 14,
+      "nombre": "Porcentaje de personas con diagnostico de DM2 con evaluacion de funcion renal",
+      "numerador": {
+        "fuente": "Serie P -> REM P4",
+        "codigos": ["P4301040"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4150602"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 15,
+      "nombre": "Porcentaje de personas con diagnostico de DM y ERC en tratamiento de prevencion secundaria de ERC",
+      "numerador": {
+        "fuente": "Serie P -> REM P4",
+        "codigos": ["P4200800"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4",
+        "codigos": ["P4200600"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 16,
+      "nombre": "Porcentaje de personas con diagnostico de ECV en tratamiento con antiagregante plaquetario",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4190930"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4190900", "P4190910"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    },
+    {
+      "id": 17,
+      "nombre": "Porcentaje de personas con diagnostico de ECV en tratamiento con estatinas",
+      "numerador": {
+        "fuente": "Serie P -> REM P4 -> Seccion B",
+        "codigos": ["P4190940"],
+        "columnas": ["COL01"]
+      },
+      "denominador": {
+        "fuente": "Serie P -> REM P4 -> Seccion A",
+        "codigos": ["P4190900", "P4190910"],
+        "columnas": ["COL01"]
+      },
+      "amplificador": 100
+    }
+  ],
+  "supuestos_metodologicos": [
+    "Los numeradores anuales se obtienen sumando los registros mensuales REM P4 del ano calendario.",
+    "Para la Serie P, los codigos P4xxxxx corresponden a la Seccion A del REM P4 y se identifican por su codigo de prestacion unico.",
+    "Los establecimientos APS se identifican con el maestro local de establecimientos y el campo NivelAtencionEstabglosa.",
+    "La poblacion de 15 anos y mas se utiliza como base para los denominadores poblacionales.",
+    "Prevalencias estimadas: HTA 27.6% (ENS), DM2 12.3% (ENS).",
+    "Para indicadores de cobertura efectiva, el denominador combina poblacion FONASA con prevalencias poblacionales.",
+    "El denominador de poblacion se construye desde FONASA T8009 - Poblacion Inscrita Validada APS RM, segun configuracion en diccionario_poblacion_inscrita.json.",
+    "La poblacion inscrita se agrupa por establecimiento en los mismos grupos etarios y sexo que las columnas del REM P4 (14 grupos de 15-19 a 80+).",
+    "Para cobertura de HTA, numerador = P4150601 (Col01), denominador = PIV 15+ * 27.6%.",
+    "Para cobertura de DM2, numerador = P4150602 (Col01), denominador = PIV 15+ * 12.3%.",
+    "Para indicadores de control, tanto numerador como denominador provienen de REM P4 (poblacion bajo control).",
+    "Los indicadores ECV usan como denominador la suma de P4190900 (IAM) + P4190910 (ACV)."
+  ]
+}

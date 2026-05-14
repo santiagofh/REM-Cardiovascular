@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "rem": "A05",
+    "anio": 2025,
+    "secciones_relevantes": ["H", "I"],
+    "descripcion": "Columnas para las secciones H (Ingresos PSCV) e I (Egresos PSCV) del REM A05"
+  },
+  "columnas_por_seccion": {
+    "H": {
+      "COL01": "TOTAL",
+      "COL02": "RANGO ETARIO - Menos de 15 anos",
+      "COL03": "RANGO ETARIO - 15 - 19 anos",
+      "COL04": "RANGO ETARIO - 20 - 24 anos",
+      "COL05": "RANGO ETARIO - 25 - 29 anos",
+      "COL06": "RANGO ETARIO - 30 - 34 anos",
+      "COL07": "RANGO ETARIO - 35 - 39 anos",
+      "COL08": "RANGO ETARIO - 40 - 44 anos",
+      "COL09": "RANGO ETARIO - 45 - 49 anos",
+      "COL10": "RANGO ETARIO - 50 - 54 anos",
+      "COL11": "RANGO ETARIO - 55 - 59 anos",
+      "COL12": "RANGO ETARIO - 60 - 64 anos",
+      "COL13": "RANGO ETARIO - 65 - 69 anos",
+      "COL14": "RANGO ETARIO - 70 - 74 anos",
+      "COL15": "RANGO ETARIO - 75 - 79 anos",
+      "COL16": "RANGO ETARIO - 80 y mas anos",
+      "COL17": "Sexo - Hombres",
+      "COL18": "Sexo - Mujeres",
+      "COL19": "Pueblos Originarios",
+      "COL20": "Migrantes"
+    },
+    "I": {
+      "COL01": "TOTAL",
+      "COL02": "RANGO ETARIO - Menos de 15 anos",
+      "COL03": "RANGO ETARIO - 15 - 19 anos",
+      "COL04": "RANGO ETARIO - 20 - 24 anos",
+      "COL05": "RANGO ETARIO - 25 - 29 anos",
+      "COL06": "RANGO ETARIO - 30 - 34 anos",
+      "COL07": "RANGO ETARIO - 35 - 39 anos",
+      "COL08": "RANGO ETARIO - 40 - 44 anos",
+      "COL09": "RANGO ETARIO - 45 - 49 anos",
+      "COL10": "RANGO ETARIO - 50 - 54 anos",
+      "COL11": "RANGO ETARIO - 55 - 59 anos",
+      "COL12": "RANGO ETARIO - 60 - 64 anos",
+      "COL13": "RANGO ETARIO - 65 - 69 anos",
+      "COL14": "RANGO ETARIO - 70 - 74 anos",
+      "COL15": "RANGO ETARIO - 75 - 79 anos",
+      "COL16": "RANGO ETARIO - 80 y mas anos",
+      "COL17": "Sexo - Hombres",
+      "COL18": "Sexo - Mujeres",
+      "COL19": "Pueblos Originarios",
+      "COL20": "Migrantes"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+.streamlit/*.log
+
+# Output Excel
+*.xlsx
+
+# Old version outputs (generated)
+D/__pycache__/
+D/output/*.csv
+D/EGRESOS_*/
+
+# Generated CSV data (keep only if needed for the dashboard to work out-of-the-box)
+# 2025/*.csv
+
+# Streamlit config secrets (if any)
+.streamlit/secrets.toml

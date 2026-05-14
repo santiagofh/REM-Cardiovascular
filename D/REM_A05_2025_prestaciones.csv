@@ -1,0 +1,20 @@
+rem,seccion,seccion_nombre,codigo_prestacion,detalle_prestacion,detalle_niveles,fila_excel
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),03030360,Ingresos al PSCV,Ingresos al PSCV,119
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),03021106,Programa de Salud Cardiovascular - Hipertension Arterial,Programa de Salud Cardiovascular - Hipertension Arterial,120
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),03021107,Programa de Salud Cardiovascular - Diabetes Mellitus,Programa de Salud Cardiovascular - Diabetes Mellitus,121
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),03021108,Programa de Salud Cardiovascular - Dislipidemia,Programa de Salud Cardiovascular - Dislipidemia,122
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05990071,Programa de Salud Cardiovascular - Antecedentes de Infarto Agudo al Miocardio (IAM),Programa de Salud Cardiovascular - Antecedentes de Infarto Agudo al Miocardio (IAM),123
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05990072,"Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)","Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)",124
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),09600292,Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV),Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV),125
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),09600293,Programa de Salud Cardiovascular - Enfermedad Renal Cronica,Programa de Salud Cardiovascular - Enfermedad Renal Cronica,126
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05810432,Programa de Salud Cardiovascular - Tabaquismo >= 55 anos,Programa de Salud Cardiovascular - Tabaquismo >= 55 anos,127
+A05,H,INGRESOS AL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),09600294,Protocolo HEARTS,Protocolo HEARTS,128
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05810040,Egresos del PSCV,Egresos del PSCV,133
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05225400,Programa de Salud Cardiovascular - Hipertension Arterial,Programa de Salud Cardiovascular - Hipertension Arterial,134
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05225401,Programa de Salud Cardiovascular - Diabetes Mellitus,Programa de Salud Cardiovascular - Diabetes Mellitus,135
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05225402,Programa de Salud Cardiovascular - Dislipidemia,Programa de Salud Cardiovascular - Dislipidemia,136
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05990073,Programa de Salud Cardiovascular - Antecedentes Infarto Agudo al Miocardio (IAM),Programa de Salud Cardiovascular - Antecedentes Infarto Agudo al Miocardio (IAM),137
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05990074,"Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)","Programa de Salud Cardiovascular - Antecedentes de otras enfermedades cardiovasculares (se excluye IAM y ACV)",138
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),09600295,Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV),Programa de Salud Cardiovascular - Antecedentes Enf. Cerebrovascular (ACV),139
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),09600296,Programa de Salud Cardiovascular - Enfermedad Renal Cronica,Programa de Salud Cardiovascular - Enfermedad Renal Cronica,140
+A05,I,EGRESOS DEL PROGRAMA DE SALUD CARDIOVASCULAR (PSCV),05810434,Programa de Salud Cardiovascular - Tabaquismo >= 55 anos,Programa de Salud Cardiovascular - Tabaquismo >= 55 anos,141

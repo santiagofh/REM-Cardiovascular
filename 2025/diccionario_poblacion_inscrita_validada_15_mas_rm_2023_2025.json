@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "generado_en": "2026-05-12T09:39:38.596526",
+    "maestro_establecimientos": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "proyecto": "REM-Cardiovascular",
+    "alcance": "Población inscrita y validada de 15 años y más para estimación de coberturas cardiovasculares"
+  },
+  "fuentes": {
+    "2023": {
+      "ano_indicador": 2023,
+      "ano_inscritos": 2022,
+      "base_pago": 2023,
+      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2022 (Base pago 2023)\\T5385_Poblacion_Inscrita_RM.xlsx",
+      "sheets": [
+        "Municipales",
+        "Otras",
+        "Servicio Salud"
+      ]
+    },
+    "2024": {
+      "ano_indicador": 2024,
+      "ano_inscritos": 2023,
+      "base_pago": 2024,
+      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2023 (Base pago 2024)\\Copia de T6603_Inscritos.xlsx",
+      "sheets": [
+        "Respuesta M",
+        "Respuesta S"
+      ]
+    },
+    "2025": {
+      "ano_indicador": 2025,
+      "ano_inscritos": 2024,
+      "base_pago": 2025,
+      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
+      "sheets": [
+        "Respuesta"
+      ]
+    }
+  },
+  "supuestos": [
+    "Se usa población FONASA inscrita y validada de 15 años y más como base de cobertura.",
+    "La prevalencia estimada para HTA es 27.6%.",
+    "La prevalencia estimada para DM2 es 12.3%.",
+    "El alias 311001 -> 201674 se aplica para homologar FONASA con el maestro DEIS/REM.",
+    "La base 2022 (base pago 2023) se usa como denominador del año indicador 2023.",
+    "La base 2023 (base pago 2024) se usa como denominador del año indicador 2024.",
+    "La base 2024 (base pago 2025) se usa como denominador del año indicador 2025."
+  ],
+  "columnas_csv_principal": {
+    "AnoIndicador": "Año del indicador al que se aplicará el denominador.",
+    "AnoInscritos": "Año de corte de inscritos FONASA.",
+    "BasePago": "Año de base de pago informado por FONASA.",
+    "IdEstablecimiento": "Código homologado del establecimiento.",
+    "IdEstablecimiento_denominador_original": "Código original observado en la base FONASA.",
+    "servicio_salud_denominador": "Servicio de salud según base FONASA.",
+    "dependencia_denominador": "Dependencia según base FONASA.",
+    "comuna_denominador": "Comuna según base FONASA.",
+    "establecimiento_denominador": "Nombre del centro según base FONASA.",
+    "poblacion_inscrita_validada_15_mas": "Población inscrita y validada de 15 años y más.",
+    "poblacion_inscrita_validada_15_mas_hombres": "Población inscrita y validada de 15 años y más, hombres.",
+    "poblacion_inscrita_validada_15_mas_mujeres": "Población inscrita y validada de 15 años y más, mujeres.",
+    "poblacion_estimada_hta_15_mas": "Población estimada con HTA = población 15+ x 0.276.",
+    "poblacion_estimada_dm2_15_mas": "Población estimada con DM2 = población 15+ x 0.123.",
+    "codigo_madre_master": "Código madre del establecimiento según maestro.",
+    "IdServicio_master": "Código de servicio de salud según maestro.",
+    "servicio_salud_master": "Servicio de salud según maestro.",
+    "tipo_establecimiento_master": "Tipo de establecimiento según maestro.",
+    "establecimiento_master": "Nombre del establecimiento según maestro.",
+    "dependencia_master": "Dependencia administrativa según maestro.",
+    "nivel_atencion_master": "Nivel de atención según maestro.",
+    "IdComuna_master": "Código de comuna según maestro.",
+    "comuna_master": "Comuna según maestro.",
+    "estado_funcionamiento_master": "Estado de funcionamiento según maestro.",
+    "es_aps": "True si el maestro clasifica el establecimiento como nivel primario.",
+    "sin_match_master": "True si el establecimiento no logró homologarse con el maestro."
+  },
+  "archivos_generados": {
+    "csv_main": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv",
+    "csv_summary": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\poblacion_inscrita_validada_15_mas_rm_resumen_anual_2023_2025.csv",
+    "dictionary": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\diccionario_poblacion_inscrita_validada_15_mas_rm_2023_2025.json"
+  }
+}

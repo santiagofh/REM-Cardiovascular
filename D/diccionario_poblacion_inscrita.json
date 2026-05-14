@@ -1,0 +1,344 @@
+{
+  "region_objetivo": "13",
+  "ano_denominador": 2025,
+  "descripcion": "Denominador de poblacion inscrita validada FONASA para indicadores cardiovasculares - Poblacion 15+ años en APS, Región Metropolitana",
+  "fuente_fonasa": {
+    "2024": {
+      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Población Inscrita\\2024 - Copia de T6603_Inscritos.xlsx",
+      "sheets": ["Respuesta M", "Respuesta S"],
+      "skiprows": 3,
+      "encoding": "latin1"
+    },
+    "2025": {
+      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
+      "sheets": ["Respuesta"],
+      "skiprows": 3,
+      "encoding": "latin1"
+    }
+  },
+  "maestro_establecimientos": {
+    "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "separador": ";",
+    "columnas_maestro": [
+      "EstablecimientoCodigoAntiguo",
+      "EstablecimientoCodigo",
+      "EstablecimientoCodigoMadreNuevo",
+      "RegionCodigo",
+      "SeremiSaludCodigo_ServicioDeSaludCodigo",
+      "SeremiSaludGlosa_ServicioDeSaludGlosa",
+      "TipoEstablecimientoGlosa",
+      "EstablecimientoGlosa",
+      "DependenciaAdministrativa",
+      "NivelAtencionEstabglosa",
+      "ComunaCodigo",
+      "ComunaGlosa",
+      "EstadoFuncionamiento"
+    ]
+  },
+  "codigos_rem_fuente": {
+    "serie_p": {
+      "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieP2024.csv",
+      "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieP2025.csv"
+    }
+  },
+  "filtros_poblacion": {
+    "edad_minima": 15,
+    "edad_maxima": 120,
+    "columna_edad": "Edad",
+    "columna_sexo": "Sexo",
+    "columna_inscritos": "Inscritos",
+    "columna_id_establecimiento": "Código Centro",
+    "columna_servicio": "Servicio de Salud",
+    "columna_comuna": "Comuna",
+    "columna_dependencia": "Dependencia",
+    "columna_nombre_establecimiento": "Nombre Centro",
+    "sexos_validos": ["Hombres", "Mujeres"],
+    "excluir_sin_informacion": true
+  },
+  "grupos_etarios": {
+    "15_19": {
+      "label": "15 a 19 años",
+      "edad_min": 15,
+      "edad_max": 19
+    },
+    "20_24": {
+      "label": "20 a 24 años",
+      "edad_min": 20,
+      "edad_max": 24
+    },
+    "25_29": {
+      "label": "25 a 29 años",
+      "edad_min": 25,
+      "edad_max": 29
+    },
+    "30_34": {
+      "label": "30 a 34 años",
+      "edad_min": 30,
+      "edad_max": 34
+    },
+    "35_39": {
+      "label": "35 a 39 años",
+      "edad_min": 35,
+      "edad_max": 39
+    },
+    "40_44": {
+      "label": "40 a 44 años",
+      "edad_min": 40,
+      "edad_max": 44
+    },
+    "45_49": {
+      "label": "45 a 49 años",
+      "edad_min": 45,
+      "edad_max": 49
+    },
+    "50_54": {
+      "label": "50 a 54 años",
+      "edad_min": 50,
+      "edad_max": 54
+    },
+    "55_59": {
+      "label": "55 a 59 años",
+      "edad_min": 55,
+      "edad_max": 59
+    },
+    "60_64": {
+      "label": "60 a 64 años",
+      "edad_min": 60,
+      "edad_max": 64
+    },
+    "65_69": {
+      "label": "65 a 69 años",
+      "edad_min": 65,
+      "edad_max": 69
+    },
+    "70_74": {
+      "label": "70 a 74 años",
+      "edad_min": 70,
+      "edad_max": 74
+    },
+    "75_79": {
+      "label": "75 a 79 años",
+      "edad_min": 75,
+      "edad_max": 79
+    },
+    "80_mas": {
+      "label": "80 y más años",
+      "edad_min": 80,
+      "edad_max": 120
+    }
+  },
+  "columnas_p4_correspondencia": {
+    "COL01": "total_ambos_sexos",
+    "COL02": "total_hombres",
+    "COL03": "total_mujeres",
+    "COL04": "15_19_hombres",
+    "COL05": "15_19_mujeres",
+    "COL06": "20_24_hombres",
+    "COL07": "20_24_mujeres",
+    "COL08": "25_29_hombres",
+    "COL09": "25_29_mujeres",
+    "COL10": "30_34_hombres",
+    "COL11": "30_34_mujeres",
+    "COL12": "35_39_hombres",
+    "COL13": "35_39_mujeres",
+    "COL14": "40_44_hombres",
+    "COL15": "40_44_mujeres",
+    "COL16": "45_49_hombres",
+    "COL17": "45_49_mujeres",
+    "COL18": "50_54_hombres",
+    "COL19": "50_54_mujeres",
+    "COL20": "55_59_hombres",
+    "COL21": "55_59_mujeres",
+    "COL22": "60_64_hombres",
+    "COL23": "60_64_mujeres",
+    "COL24": "65_69_hombres",
+    "COL25": "65_69_mujeres",
+    "COL26": "70_74_hombres",
+    "COL27": "70_74_mujeres",
+    "COL28": "75_79_hombres",
+    "COL29": "75_79_mujeres",
+    "COL30": "80_mas_hombres",
+    "COL31": "80_mas_mujeres"
+  },
+  "grupos_solicitados_indicadores": {
+    "15_24": {
+      "label": "15 a 24 años",
+      "grupos": ["15_19", "20_24"]
+    },
+    "25_34": {
+      "label": "25 a 34 años",
+      "grupos": ["25_29", "30_34"]
+    },
+    "35_44": {
+      "label": "35 a 44 años",
+      "grupos": ["35_39", "40_44"]
+    },
+    "45_54": {
+      "label": "45 a 54 años",
+      "grupos": ["45_49", "50_54"]
+    },
+    "55_64": {
+      "label": "55 a 64 años",
+      "grupos": ["55_59", "60_64"]
+    },
+    "65_mas": {
+      "label": "65 y más años",
+      "grupos": ["65_69", "70_74", "75_79", "80_mas"]
+    }
+  },
+  "prevalencias_poblacionales": {
+    "hta": {
+      "nombre": "Hipertensión Arterial",
+      "prevalencia_pct": 27.6,
+      "fuente": "ENS 2016-2017",
+      "poblacion_referencia": "15 años y más"
+    },
+    "dm2": {
+      "nombre": "Diabetes Mellitus tipo 2",
+      "prevalencia_pct": 12.3,
+      "fuente": "ENS 2016-2017",
+      "poblacion_referencia": "15 años y más"
+    }
+  },
+  "codigos_rem_p4_para_numerador": {
+    "cobertura_hta": {
+      "codigos": ["P4150601"],
+      "columna": "COL01",
+      "descripcion": "Personas bajo control con HTA"
+    },
+    "cobertura_dm2": {
+      "codigos": ["P4150602"],
+      "columna": "COL01",
+      "descripcion": "Personas bajo control con DM2"
+    },
+    "control_hta_pa140": {
+      "codigos": ["P4180200"],
+      "columna": "COL01",
+      "descripcion": "Personas con HTA con PA < 140/90 mmHg"
+    },
+    "control_hta_pa150": {
+      "codigos": ["P4200100"],
+      "columna": "COL01",
+      "descripcion": "Personas con HTA >= 80 años con PA < 150/90 mmHg"
+    },
+    "control_dm2_hba1c7": {
+      "codigos": ["P4180300"],
+      "columna": "COL01",
+      "descripcion": "Personas con DM2 con HbA1c < 7%"
+    },
+    "control_dm2_hba1c8": {
+      "codigos": ["P4200200"],
+      "columna": "COL01",
+      "descripcion": "Personas con DM2 >= 80 años con HbA1c < 8%"
+    },
+    "hta_muy_descompensada": {
+      "codigos": ["P4200400"],
+      "columna": "COL01",
+      "descripcion": "Personas con HTA con PA >= 160/100 mmHg"
+    },
+    "dm2_muy_descompensada": {
+      "codigos": ["P4190960"],
+      "columna": "COL01",
+      "descripcion": "Personas con DM2 con HbA1c >= 9%"
+    },
+    "ecv_antiagregante": {
+      "codigos": ["P4190930"],
+      "columna": "COL01",
+      "descripcion": "Personas con ECV en tratamiento con antiagregante plaquetario"
+    },
+    "ecv_estatina": {
+      "codigos": ["P4190940"],
+      "columna": "COL01",
+      "descripcion": "Personas con ECV en tratamiento con estatina"
+    },
+    "fondo_ojo_vigente": {
+      "codigos": ["P4190950"],
+      "columna": "COL01",
+      "descripcion": "Personas con DM2 con fondo de ojo vigente"
+    },
+    "triple_meta": {
+      "codigos": ["P4190920"],
+      "columna": "COL01",
+      "descripcion": "HbA1c<7% - PA<140/90 mmHg y LDL<100 mg/dl"
+    },
+    "funcion_renal_dm": {
+      "codigos": ["P4301040"],
+      "columna": "COL01",
+      "descripcion": "DM con VFGe y RAC vigente"
+    },
+    "funcion_renal_hta": {
+      "codigos": ["P4301080"],
+      "columna": "COL01",
+      "descripcion": "HTA con VFGe y RAC vigente"
+    },
+    "iam": {
+      "codigos": ["P4190900"],
+      "columna": "COL01",
+      "descripcion": "Antecedentes de IAM"
+    },
+    "acv": {
+      "codigos": ["P4190910"],
+      "columna": "COL01",
+      "descripcion": "Antecedentes de ACV"
+    },
+    "indice_madurez_hearts": {
+      "codigos": ["P4190808"],
+      "columna": "COL01",
+      "descripcion": "Indice de Madurez HEARTS"
+    }
+  },
+  "outputs_denominador": {
+    "detalle": {
+      "nombre": "denominador_cardiovascular_detalle_{ano}.csv",
+      "columnas": [
+        "Ano", "IdEstablecimiento", "IdComuna", "comuna",
+        "establecimiento_denominador", "servicio_salud_denominador",
+        "dependencia_denominador", "sexo", "edad", "grupo_etario",
+        "inscritos"
+      ]
+    },
+    "establecimiento": {
+      "nombre": "denominador_cardiovascular_establecimiento_{ano}.csv",
+      "columnas_edad": [
+        "total_ambos_sexos", "total_hombres", "total_mujeres",
+        "15_19_hombres", "15_19_mujeres",
+        "20_24_hombres", "20_24_mujeres",
+        "25_29_hombres", "25_29_mujeres",
+        "30_34_hombres", "30_34_mujeres",
+        "35_39_hombres", "35_39_mujeres",
+        "40_44_hombres", "40_44_mujeres",
+        "45_49_hombres", "45_49_mujeres",
+        "50_54_hombres", "50_54_mujeres",
+        "55_59_hombres", "55_59_mujeres",
+        "60_64_hombres", "60_64_mujeres",
+        "65_69_hombres", "65_69_mujeres",
+        "70_74_hombres", "70_74_mujeres",
+        "75_79_hombres", "75_79_mujeres",
+        "80_mas_hombres", "80_mas_mujeres"
+      ]
+    },
+    "prevalencia": {
+      "nombre": "denominador_cardiovascular_prevalencia_{ano}.csv",
+      "descripcion": "PIV 15+ con prevalencias de HTA y DM2 aplicadas por establecimiento",
+      "columnas": [
+        "IdEstablecimiento", "servicio_salud", "comuna",
+        "piv_15_mas",
+        "prevalencia_hta_pct", "pob_estimada_hta",
+        "prevalencia_dm2_pct", "pob_estimada_dm2"
+      ]
+    }
+  },
+  "supuestos_metodologicos": [
+    "El denominador se construye con la base FONASA de poblacion inscrita en APS (T8009), usada como aproximacion operativa a la poblacion asignada.",
+    "Se considera solo la poblacion de 15 años y más, que corresponde a la población objetivo del PSCV.",
+    "Las prevalencias de HTA (27.6%) y DM2 (12.3%) provienen de la Encuesta Nacional de Salud (ENS) 2016-2017.",
+    "Para la cobertura poblacional, el denominador es PIV 15+ * prevalencia respectiva (HTA o DM2).",
+    "Para el control de la enfermedad, el denominador son las personas bajo control (numerador de cobertura respectivo).",
+    "Los establecimientos APS se identifican mediante el campo NivelAtencionEstabglosa que contenga 'Primario'.",
+    "Se excluyen registros con sexo 'Sin información' del denominador.",
+    "Los codigos de establecimiento FONASA pueden diferir de los codigos DEIS; se aplica alias cuando existe diferencia documentada."
+  ],
+  "codigo_alias_fonasa_deis": {
+    "311001": "201674"
+  }
+}
