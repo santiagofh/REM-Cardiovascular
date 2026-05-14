@@ -7,13 +7,15 @@ __pycache__/
 *.log
 .streamlit/*.log
 
-# Output Excel
+# Output Excel (except comparison file)
 *.xlsx
+!comparacion.xlsx
 
 # Old version outputs (generated)
 D/__pycache__/
 D/output/*.csv
 D/EGRESOS_*/
+D/EGRESOS_*.zip
 
 # Generated CSV data (keep only if needed for the dashboard to work out-of-the-box)
 # 2025/*.csv

@@ -1018,15 +1018,14 @@ def render_methodology_page() -> None:
     _render_metodologia_encabezado()
     _render_metodologia_fuentes()
     _render_metodologia_indicadores()
-    _render_metodologia_validacion()
     _render_metodologia_rem_codigos()
     _render_metodologia_notas()
 
 
 def get_navigation_pages():
     return [
-        st.Page(render_excel_like_page, title="Planilla", icon=":material/table_view:", default=True),
+        st.Page(render_excel_like_page, title="Indicadores cardiovasculares RM", icon=":material/table_view:", default=True),
         st.Page(render_indicator_table_page, title="Indicadores REM P4", icon=":material/filter_alt:"),
-        st.Page(render_egresos_page, title="Tasas de egresos", icon=":material/local_hospital:"),
+        st.Page(render_egresos_page, title="Indicadores Egresos Hospitalarios", icon=":material/local_hospital:"),
         st.Page(render_methodology_page, title="Metodología", icon=":material/analytics:"),
     ]
