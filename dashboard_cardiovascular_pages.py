@@ -76,7 +76,11 @@ def indicator_sort_key(indicator_id: object) -> tuple[int, int, str]:
 
 
 def indicator_label(indicator_id: object, indicator_name: object) -> str:
-    return f"{str(indicator_id).strip()}. {str(indicator_name).strip()}"
+    raw = str(indicator_id).strip()
+    digits = "".join(ch for ch in raw if ch.isdigit())
+    suffix = raw[len(digits):]
+    padded = digits.zfill(2)
+    return f"{padded}{suffix}. {str(indicator_name).strip()}"
 
 
 def format_indicator_value(raw_value: object, unidad: str = "%") -> str:
