@@ -6,6 +6,7 @@ import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent
 EGRESOS_DIR = Path("D:/DATA/EGRESOS_HOSPITALARIOS_C")
+BENEFICIARIOS_PATH = BASE_DIR / "beneficiarios_fonasa_15_mas_rm_comuna_2024_2025.csv"
 
 REGION_RM = "13"
 
@@ -42,7 +43,48 @@ FILE_NAMES = {
     2025: "EH_2025_preliminar.csv",
 }
 
-USECOLS = ["REGION", "PREVI", "TIPO_EDAD", "EDAD_CANT", "DIAG1", "PROCED_PPAL", "COMUNA"]
+USECOLS = [
+    "REGION",
+    "PREVI",
+    "TIPO_EDAD",
+    "EDAD_CANT",
+    "COMUNA",
+    "DIAG1",
+    "DIAG2",
+    "DIAG3",
+    "DIAG4",
+    "DIAG5",
+    "DIAG6",
+    "DIAG7",
+    "DIAG8",
+    "DIAG9",
+    "DIAG10",
+    "DIAG11",
+    "INTERV_Q",
+    "INTERV_Q_PPAL",
+    "INTERV_Q_2",
+    "INTERV_Q_3",
+    "PROCED",
+    "PROCED_PPAL",
+    "PROCED_2",
+    "PROCED_3",
+]
+
+DIAG_COLS = [
+    "DIAG1",
+    "DIAG2",
+    "DIAG3",
+    "DIAG4",
+    "DIAG5",
+    "DIAG6",
+    "DIAG7",
+    "DIAG8",
+    "DIAG9",
+    "DIAG10",
+    "DIAG11",
+]
+INT_COLS = ["INTERV_Q", "INTERV_Q_PPAL", "INTERV_Q_2", "INTERV_Q_3"]
+PROC_COLS = ["PROCED", "PROCED_PPAL", "PROCED_2", "PROCED_3"]
 
 
 def _match_codes(series: pd.Series, codes: list[str]) -> pd.Series:
@@ -52,38 +94,51 @@ def _match_codes(series: pd.Series, codes: list[str]) -> pd.Series:
     return mask
 
 
-def _match_amputation(diag1: pd.Series, proc: pd.Series) -> pd.Series:
-    return diag1.astype(str).str.match(r"^E1[0-4]", na=False) & proc.astype(str).str.match(r"^1701", na=False)
+def _any_match(df: pd.DataFrame, columns: list[str], pattern: str) -> pd.Series:
+    return pd.concat(
+        [df[col].astype(str).str.match(pattern, na=False) for col in columns],
+        axis=1,
+    ).any(axis=1)
 
 
-def load_piv():
-    piv_path = BASE_DIR / "poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv"
-    piv = pd.read_csv(piv_path, dtype=str)
-    piv["AnoIndicador"] = pd.to_numeric(piv["AnoIndicador"], errors="coerce")
-    piv["poblacion_inscrita_validada_15_mas"] = pd.to_numeric(piv["poblacion_inscrita_validada_15_mas"], errors="coerce")
-    piv["IdComuna_master"] = piv["IdComuna_master"].astype(str).str.strip()
-    piv["IdServicio_master"] = piv["IdServicio_master"].astype(str).str.strip()
-    piv["servicio_salud_master"] = piv["servicio_salud_master"].astype(str).str.strip()
-    return piv
+def _match_amputation(df: pd.DataFrame) -> pd.Series:
+    diabetes_any = _any_match(df, DIAG_COLS, r"^E1[0-4]")
+    amputation_proc = _any_match(df, PROC_COLS, r"^1701")
+    amputation_interv = _any_match(df, INT_COLS, r"^(1703|1704|1802|1803|1902)")
+    return diabetes_any & (amputation_proc | amputation_interv)
+
+
+def load_beneficiarios():
+    beneficiarios = pd.read_csv(BENEFICIARIOS_PATH, dtype=str)
+    beneficiarios["Ano"] = pd.to_numeric(beneficiarios["Ano"], errors="coerce")
+    beneficiarios["beneficiarios_fonasa_15_mas"] = pd.to_numeric(
+        beneficiarios["beneficiarios_fonasa_15_mas"], errors="coerce"
+    )
+    beneficiarios["IdComuna"] = beneficiarios["IdComuna"].astype(str).str.strip()
+    beneficiarios["IdServicio"] = beneficiarios["IdServicio"].astype(str).str.strip()
+    beneficiarios["servicio_salud"] = beneficiarios["servicio_salud"].astype(str).str.strip()
+    beneficiarios["comuna"] = beneficiarios["comuna"].astype(str).str.strip()
+    return beneficiarios
 
 
 def main():
-    piv = load_piv()
+    beneficiarios = load_beneficiarios()
 
-    # Aggregate PIV by comuna (per year)
-    piv_comuna = (
-        piv.groupby(["AnoIndicador", "IdComuna_master", "IdServicio_master", "servicio_salud_master"])["poblacion_inscrita_validada_15_mas"]
+    beneficiarios_comuna = (
+        beneficiarios.groupby(["Ano", "IdComuna", "IdServicio", "servicio_salud", "comuna"])["beneficiarios_fonasa_15_mas"]
         .sum()
         .reset_index()
-        .rename(columns={"IdComuna_master": "comuna", "IdServicio_master": "IdServicio", "servicio_salud_master": "servicio_salud"})
     )
-    piv_comuna["comuna"] = piv_comuna["comuna"].astype(str).str.strip()
 
-    # Aggregate PIV by servicio de salud
-    piv_ss = piv_comuna.groupby(["AnoIndicador", "IdServicio", "servicio_salud"])["poblacion_inscrita_validada_15_mas"].sum().reset_index()
+    beneficiarios_ss = (
+        beneficiarios_comuna.groupby(["Ano", "IdServicio", "servicio_salud"])["beneficiarios_fonasa_15_mas"]
+        .sum()
+        .reset_index()
+    )
 
-    # Aggregate PIV RM total
-    piv_rm = piv_comuna.groupby(["AnoIndicador"])["poblacion_inscrita_validada_15_mas"].sum().reset_index()
+    beneficiarios_rm = (
+        beneficiarios_comuna.groupby(["Ano"])["beneficiarios_fonasa_15_mas"].sum().reset_index()
+    )
 
     all_rows = []
 
@@ -118,7 +173,7 @@ def main():
 
             for ind in INDICADORES:
                 if ind["id"] == "22":
-                    f[ind["id"]] = _match_amputation(f["DIAG1"], f["PROCED_PPAL"])
+                    f[ind["id"]] = _match_amputation(f)
                 else:
                     f[ind["id"]] = _match_codes(f["DIAG1"], ind["cie"])
 
@@ -135,10 +190,10 @@ def main():
         comuna_totals = comuna_agg.set_index("COMUNA").to_dict(orient="index")
 
         # Comuna-level rows
-        piv_c_year = piv_comuna[piv_comuna["AnoIndicador"] == year]
+        beneficiarios_c_year = beneficiarios_comuna[beneficiarios_comuna["Ano"] == year]
         for comuna, counts in comuna_totals.items():
-            piv_row = piv_c_year[piv_c_year["comuna"] == comuna]
-            denom = int(piv_row["poblacion_inscrita_validada_15_mas"].sum()) if not piv_row.empty else 0
+            benef_row = beneficiarios_c_year[beneficiarios_c_year["IdComuna"] == comuna]
+            denom = int(benef_row["beneficiarios_fonasa_15_mas"].sum()) if not benef_row.empty else 0
             for ind in INDICADORES:
                 n = int(counts.get(ind["id"], 0))
                 tasa = round((n / denom) * 10_000, 4) if denom > 0 else 0.0
@@ -147,30 +202,30 @@ def main():
                     "indicador_id": ind["id"],
                     "nombre_indicador": ind["nombre"],
                     "nivel": "comuna",
-                    "IdServicio": piv_row.iloc[0]["IdServicio"] if not piv_row.empty else "",
-                    "servicio_salud": piv_row.iloc[0]["servicio_salud"] if not piv_row.empty else "",
+                    "IdServicio": benef_row.iloc[0]["IdServicio"] if not benef_row.empty else "",
+                    "servicio_salud": benef_row.iloc[0]["servicio_salud"] if not benef_row.empty else "",
                     "comuna": comuna,
                     "n_egresos": n,
-                    "denominador_piv": denom,
+                    "denominador_fonasa_15_mas": denom,
                     "tasa_x10000": tasa,
                 })
 
         # SS-level rows (aggregate from comuna totals)
-        piv_ss_year = piv_ss[piv_ss["AnoIndicador"] == year]
+        beneficiarios_ss_year = beneficiarios_ss[beneficiarios_ss["Ano"] == year]
         ss_egresos: dict[str, dict[str, int]] = {}
         for comuna, counts in comuna_totals.items():
-            piv_row = piv_c_year[piv_c_year["comuna"] == comuna]
-            if piv_row.empty:
+            benef_row = beneficiarios_c_year[beneficiarios_c_year["IdComuna"] == comuna]
+            if benef_row.empty:
                 continue
-            ss_id = piv_row.iloc[0]["IdServicio"]
+            ss_id = benef_row.iloc[0]["IdServicio"]
             if ss_id not in ss_egresos:
                 ss_egresos[ss_id] = {ind["id"]: 0 for ind in INDICADORES}
             for ind in INDICADORES:
                 ss_egresos[ss_id][ind["id"]] += int(counts.get(ind["id"], 0))
 
-        for _, piv_row in piv_ss_year.iterrows():
-            ss_id = piv_row["IdServicio"]
-            denom = int(piv_row["poblacion_inscrita_validada_15_mas"])
+        for _, benef_row in beneficiarios_ss_year.iterrows():
+            ss_id = benef_row["IdServicio"]
+            denom = int(benef_row["beneficiarios_fonasa_15_mas"])
             counts = ss_egresos.get(ss_id, {})
             for ind in INDICADORES:
                 n = counts.get(ind["id"], 0)
@@ -181,16 +236,16 @@ def main():
                     "nombre_indicador": ind["nombre"],
                     "nivel": "servicio_salud",
                     "IdServicio": ss_id,
-                    "servicio_salud": piv_row["servicio_salud"],
+                    "servicio_salud": benef_row["servicio_salud"],
                     "comuna": "",
                     "n_egresos": n,
-                    "denominador_piv": denom,
+                    "denominador_fonasa_15_mas": denom,
                     "tasa_x10000": tasa,
                 })
 
         # RM-level rows (aggregate from comuna totals)
-        rm_piv_row = piv_rm[piv_rm["AnoIndicador"] == year]
-        rm_denom = int(rm_piv_row["poblacion_inscrita_validada_15_mas"].sum()) if not rm_piv_row.empty else 0
+        rm_benef_row = beneficiarios_rm[beneficiarios_rm["Ano"] == year]
+        rm_denom = int(rm_benef_row["beneficiarios_fonasa_15_mas"].sum()) if not rm_benef_row.empty else 0
         rm_counts = {ind["id"]: 0 for ind in INDICADORES}
         for comuna, counts in comuna_totals.items():
             for ind in INDICADORES:
@@ -207,11 +262,12 @@ def main():
                 "servicio_salud": "",
                 "comuna": "",
                 "n_egresos": n,
-                "denominador_piv": rm_denom,
+                "denominador_fonasa_15_mas": rm_denom,
                 "tasa_x10000": tasa,
             })
 
-        print(f"  RM FONASA 15+: {total_rows:,} | {len(comuna_totals)} comunas")
+        print(f"  RM FONASA 15+ (egresos observados): {total_rows:,} | {len(comuna_totals)} comunas")
+        print(f"  RM beneficiarios FONASA 15+ (denominador): {rm_denom:,}")
         for ind in INDICADORES:
             print(f"  Ind {ind['id']}: {rm_counts[ind['id']]:,} egresos")
 

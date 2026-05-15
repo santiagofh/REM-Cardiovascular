@@ -77,6 +77,8 @@ def indicator_sort_key(indicator_id: object) -> tuple[int, int, str]:
 
 def indicator_label(indicator_id: object, indicator_name: object) -> str:
     raw = str(indicator_id).strip()
+    if raw == "12b":
+        return f"12. {str(indicator_name).strip()}"
     digits = "".join(ch for ch in raw if ch.isdigit())
     suffix = raw[len(digits):]
     padded = digits.zfill(2)
@@ -114,7 +116,6 @@ def excel_bytes(df: pd.DataFrame) -> bytes:
     return buffer.getvalue()
 
 
-@st.cache_data(show_spinner=False)
 def load_dashboard_data() -> pd.DataFrame:
     if not DASHBOARD_DATA_PATH.exists():
         raise FileNotFoundError(f"No se encontró el archivo: {DASHBOARD_DATA_PATH}")
@@ -145,7 +146,18 @@ def load_panel_reference() -> pd.DataFrame:
     df = pd.read_csv(PANEL_PATH, dtype={"indicador_id": str}).fillna("")
     df["indicador_id"] = df["indicador_id"].astype(str).str.strip()
     df["orden_num"] = pd.to_numeric(df["orden"], errors="coerce")
-    numeric_columns = ["amplificador"]
+    numeric_columns = [
+        "amplificador",
+        "valor_2019",
+        "valor_2021",
+        "valor_2022",
+        "valor_2023",
+        "valor_2024",
+        "valor_2025",
+        "valor_2024_rm",
+        "numerador_2024_rm",
+        "denominador_2024_rm",
+    ]
     for column in numeric_columns:
         df[f"{column}_num"] = pd.to_numeric(df[column], errors="coerce")
     df["unidad_calculo"] = df["amplificador_num"].map(lambda value: "por 10.000" if pd.notna(value) and float(value) >= 10000 else "%")
@@ -182,14 +194,15 @@ def load_indicator_sources() -> pd.DataFrame:
     return df
 
 
-@st.cache_data(show_spinner=False)
 def load_egresos_data() -> pd.DataFrame:
     if not EGRESOS_PATH.exists():
         return pd.DataFrame()
 
     df = pd.read_csv(EGRESOS_PATH, dtype={"indicador_id": str})
     df["indicador_id"] = df["indicador_id"].astype(str).str.strip()
-    numeric_columns = ["Ano", "n_egresos", "denominador_piv", "tasa_x10000"]
+    if "denominador_fonasa_15_mas" not in df.columns and "denominador_piv" in df.columns:
+        df["denominador_fonasa_15_mas"] = df["denominador_piv"]
+    numeric_columns = ["Ano", "n_egresos", "denominador_fonasa_15_mas", "tasa_x10000"]
     for col in numeric_columns:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     return df
@@ -540,7 +553,7 @@ SHORT_NUM: dict[str, str] = {
     "10": "REM-P4: DM2 compensada + insulina",
     "11": "REM-P4: Evaluación pie diabético vigente",
     "12a": "REM-P4: Tamizaje RD vigente",
-    "12b": "REM-P4: Fondo de ojo vigente",
+    "12b": "REM-P4: Evaluación fondo de ojo vigente",
     "13": "REM-P4: Con VFGe y RAC en HTA",
     "14": "REM-P4: Con VFGe y RAC en DM2",
     "15": "REM-P4: DM+ERC con IECA o ARA II",
@@ -550,7 +563,7 @@ SHORT_NUM: dict[str, str] = {
     "19": "EGRESOS: CIE-10 I20-I25",
     "20": "EGRESOS: CIE-10 I50, J81",
     "21": "EGRESOS: CIE-10 E11-E14",
-    "22": "EGRESOS: DM + PROCED 1701 (amputación)",
+    "22": "EGRESOS: DM + proc/int de amputación",
 }
 
 SHORT_DEN: dict[str, str] = {
@@ -604,13 +617,6 @@ def render_excel_like_page() -> None:
         .set_index("indicador_id")["nombre_indicador"]
         .to_dict()
     )
-    names_2025 = (
-        data[data["Ano"] == 2025][["indicador_id", "nombre_indicador"]]
-        .drop_duplicates("indicador_id")
-        .set_index("indicador_id")["nombre_indicador"]
-        .to_dict()
-    )
-    names.update(names_2025)
     names.update(EGRESOS_NAMES)
 
     rm_2024_vals = data[(data["nivel"] == "rm") & (data["Ano"] == 2024)].set_index("indicador_id")["valor"]
@@ -627,50 +633,51 @@ def render_excel_like_page() -> None:
         eg_2024 = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["tasa_x10000"]
         eg_2025 = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["tasa_x10000"]
         eg_2024_num = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["n_egresos"]
-        eg_2024_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["denominador_piv"]
+        eg_2024_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["denominador_fonasa_15_mas"]
         eg_2025_num = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["n_egresos"]
-        eg_2025_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["denominador_piv"]
+        eg_2025_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["denominador_fonasa_15_mas"]
 
     rows: list[dict[str, str]] = []
 
     for iid in rem_ids:
         name = names.get(iid, iid)
-        unidad = rm_2024_unidad.get(iid, rm_2025_unidad.get(iid, "%"))
+        unidad = rm_2025_unidad.get(iid, rm_2024_unidad.get(iid, "%"))
+        valor_2024 = rm_2024_vals.get(iid, pd.NA)
+        valor_2025 = rm_2025_vals.get(iid, pd.NA)
+        numerador_2024 = rm_2024_num.get(iid, pd.NA)
+        denominador_2024 = rm_2024_den.get(iid, pd.NA)
+        numerador_2025 = rm_2025_num.get(iid, pd.NA)
+        denominador_2025 = rm_2025_den.get(iid, pd.NA)
+
         rows.append({
             "Indicador": indicator_label(iid, name),
             "Numerador base": SHORT_NUM.get(iid, ""),
             "Denominador base": SHORT_DEN.get(iid, ""),
             "Amplificador": format_amplifier(unidad),
             "2024": format_indicator_value(
-                rm_2024_vals.get(iid, pd.NA),
+                valor_2024,
                 unidad,
             ),
             "2025": format_indicator_value(
-                rm_2025_vals.get(iid, pd.NA),
+                valor_2025,
                 unidad,
             ),
-            "Numerador 2024": format_int(rm_2024_num.get(iid, pd.NA)),
-            "Denominador 2024": format_int(rm_2024_den.get(iid, pd.NA)),
-            "Numerador 2025": format_int(rm_2025_num.get(iid, pd.NA)),
-            "Denominador 2025": format_int(rm_2025_den.get(iid, pd.NA)),
+            "Numerador 2024": format_int(numerador_2024),
+            "Denominador 2024": format_int(denominador_2024),
+            "Numerador 2025": format_int(numerador_2025),
+            "Denominador 2025": format_int(denominador_2025),
         })
 
     if not egresos.empty:
-        for iid in ["18", "19", "20", "21", "22"]:
+        for iid in sorted(EGRESOS_NAMES, key=indicator_sort_key):
             name = names.get(iid, iid)
             rows.append({
                 "Indicador": indicator_label(iid, name),
                 "Numerador base": SHORT_NUM.get(iid, ""),
                 "Denominador base": SHORT_DEN.get(iid, ""),
                 "Amplificador": format_amplifier("por 10.000"),
-                "2024": format_indicator_value(
-                    eg_2024.get(iid, pd.NA) if not egresos.empty else pd.NA,
-                    "por 10.000",
-                ),
-                "2025": format_indicator_value(
-                    eg_2025.get(iid, pd.NA) if not egresos.empty else pd.NA,
-                    "por 10.000",
-                ),
+                "2024": format_indicator_value(eg_2024.get(iid, pd.NA), "por 10.000"),
+                "2025": format_indicator_value(eg_2025.get(iid, pd.NA), "por 10.000"),
                 "Numerador 2024": format_int(eg_2024_num.get(iid, pd.NA)),
                 "Denominador 2024": format_int(eg_2024_den.get(iid, pd.NA)),
                 "Numerador 2025": format_int(eg_2025_num.get(iid, pd.NA)),
@@ -699,12 +706,12 @@ def render_excel_like_page() -> None:
         "comparables.\n\n"
         "3. **Indicador 15:** Solo disponible para 2025 porque los códigos REM P4 requeridos "
         "no estaban en la Serie P 2024.\n\n"
-        "4. **Indicador 12a (tamizaje RD):** No calculado localmente porque la planilla oficial "
-        "usa una lógica de tamizaje distinta a la disponible (`P4190950` = fondo de ojo).\n\n"
+        "4. **Indicador 12:** Se muestra como `12` y localmente se aproxima con fondo de ojo vigente.\n\n"
         "5. **Indicador 5 (HEARTS):** No factible desde REM. Requiere fuente externa HEARTS.\n\n"
-        "6. **Denominador:** Los indicadores de cobertura (1, 3, 6, 8) usan población inscrita "
-        "validada FONASA 15+ con prevalencia estimada (HTA 27,6%, DM2 12,3% según ENS). Los "
-        "indicadores 18 a 22 usan la misma PIV como denominador (tasa por 10.000 hab.)."
+        "6. **Denominadores actuales del cálculo local:** Los indicadores de cobertura (1, 3, 6, 8) "
+        "usan población inscrita validada FONASA 15+ con prevalencia estimada. Los egresos (18 a 22) "
+        "usan beneficiarios FONASA de 15 años y más. Esta tabla no mezcla ni prioriza valores "
+        "de la plantilla de referencia."
     )
 
 
@@ -834,7 +841,7 @@ def render_egresos_page() -> None:
         "19": "I20-I25",
         "20": "I50, J81",
         "21": "E11-E14",
-        "22": "DM + PROCED 1701",
+        "22": "DM + proc/int amputación",
     }
 
     table_rows = []
@@ -855,11 +862,12 @@ def render_egresos_page() -> None:
 
     display = pd.DataFrame(table_rows)
     st.dataframe(display, use_container_width=True, hide_index=True)
-    st.caption("**Tasa por 10.000 habitantes | Denominador:** Población FONASA 15+ años (PIV)")
+    st.caption("**Tasa por 10.000 habitantes | Denominador:** Beneficiarios FONASA 15+ años")
     st.info(
         "Fuente: DEIS Egresos Hospitalarios (EH) 2024-2025. Los egresos se filtran por residentes de la "
-        "Región Metropolitana, beneficiarios FONASA, de 15 años y más. El indicador 22 cruza el "
-        "diagnóstico de diabetes (CIE-10 E10-E14) con código de procedimiento quirúrgico (prefijo 1701)."
+        "Región Metropolitana, beneficiarios FONASA, de 15 años y más. El indicador 22 cruza "
+        "diabetes mellitus en cualquier diagnóstico (CIE-10 E10-E14) con códigos de procedimiento "
+        "o intervención compatibles con amputación."
     )
 
     st.download_button(
@@ -876,7 +884,7 @@ def _render_metodologia_encabezado() -> None:
         <div class="hero-title">Metodología</div>
         <div class="hero-copy">
             Documentación técnica del pipeline de cálculo de indicadores cardiovasculares
-            para la Región Metropolitana. Fuentes: REM P4, FONASA (PIV) y DEIS (egresos hospitalarios).
+            para la Región Metropolitana. Fuentes: REM P4, FONASA (PIV y beneficiarios) y DEIS (egresos hospitalarios).
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -1037,9 +1045,9 @@ def _render_metodologia_notas() -> None:
     servicio de salud y región. Los indicadores 18 a 22 tienen su propia página y se pueden desagregar
     por servicio de salud y comuna.
 
-    **Población de referencia (PIV):** La población inscrita validada (PIV) de 15 años y más
-    se obtiene de las bases de FONASA y se utiliza como denominador para los indicadores de
-    cobertura (1, 3, 6, 8) y tasas de egresos (18 a 22).
+    **Población de referencia:** La población inscrita validada (PIV) de 15 años y más
+    se utiliza como denominador para los indicadores de cobertura (1, 3, 6, 8). Para las
+    tasas de egresos (18 a 22) se usan beneficiarios FONASA de 15 años y más.
 
     **Prevalencias estimadas:**
     - Hipertensión arterial (HTA): 27,6% de la población de 15 años y más, según Encuesta Nacional de Salud (ENS).
@@ -1048,13 +1056,14 @@ def _render_metodologia_notas() -> None:
     **Indicadores 16 y 17 (ECV):** Para el año 2024 se utilizó un proxy debido a cambios en los códigos
     REM P4 entre 2024 y 2025.
 
-    **Indicador 22 (amputación):** Se calcula cruzando el diagnóstico principal (DIAG1, códigos E10 a E14)
-    con el código de procedimiento quirúrgico (PROCED_PPAL, prefijo 1701) en la base de egresos DEIS.
+    **Indicador 22 (amputación):** Se calcula cruzando diabetes mellitus en cualquier diagnóstico
+    (códigos E10 a E14) con códigos de procedimiento o intervención compatibles con amputación
+    en la base de egresos DEIS.
 
     **Indicador 15:** Solo disponible para 2025, ya que los códigos REM P4 requeridos no estaban
     disponibles en la Serie P 2024.
 
-    **Tasas de egresos:** Se expresan por cada 10.000 habitantes. Denominador: Población FONASA 15+ años (PIV).
+    **Tasas de egresos:** Se expresan por cada 10.000 habitantes. Denominador: Beneficiarios FONASA 15+ años.
     """)
 
     st.markdown("### Fechas de extracción de datos")

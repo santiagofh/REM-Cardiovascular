@@ -1,0 +1,24 @@
+﻿indicador_id,nombre,unidad,ref_val_2024_rm,loc_val_2024_rm,diff,ref_num,loc_num,ref_den,loc_den
+1,Cobertura de hipertensión arterial (HTA),%,58.01909816643307,58.03573330398114,0.016635137548071555,733785.0,738373.0,1264730.103,1272273.06
+2,Control de HTA,%,64.7,64.50181683241397,-0.1981831675860377,,476264.0,,738373.0
+3,Cobertura efectiva (tasa de control poblacional) de HTA,%,37.37809346663428,37.434102393082185,0.056008926447901786,472732.0,476264.0,1264730.103,1272273.06
+4,"Porcentaje de personas con diagnóstico de HTA, muy descompensadas",%,4.38370912460734,4.356470239296399,-0.027238885310940653,32167.0,32167.0,733785.0,738373.0
+5,Cobertura de evaluación del Índice de Madurez HEARTS,%,32.71407837445573,,,240051.0,,733785.0,
+6,Cobertura de diabetes mellitus tipo 2 (DM2),%,62.59096534589285,63.29550885224853,0.7045435063556837,356658.0,358880.0,569823.453,566991.255
+7,Control de DM2,%,45.300000000000004,44.53856442264824,-0.7614355773517616,,159840.0,,358880.0
+8,Cobertura efectiva (tasa de control poblacional) de DM2,%,27.883022217409497,28.190910986801725,0.3078887693922283,158884.0,159840.0,569823.453,566991.255
+9,"Porcentaje de personas con diagnóstico de DM2, muy descompensadas",%,19.28822569520381,19.263263486402145,-0.024962208801664332,68793.0,69132.0,356658.0,358880.0
+10,"Porcentaje de personas con diagnóstico de DM2, compensada, usuarias de insulina",%,21.34422659979342,21.3214130364365,-0.02281356335691953,22938.0,23038.0,107467.0,108051.0
+11,"Porcentaje de personas con diagnóstico de DM2, con evaluación de pie diabético vigente",%,79.2919267197147,79.29224253232279,0.00031581260809332434,282801.0,284564.0,356658.0,358880.0
+12a,Porcentaje de personas con diagnóstico de DM2 y tamizaje de RD vigente,%,41.62979661188029,,,148476.0,,356658.0,
+12b,"Porcentaje de personas con diagnóstico de DM2, con evaluación de fondo de ojo (FO) vigente",%,44.6,41.53951181453411,-3.0604881854658927,,149077.0,,358880.0
+13,"Porcentaje de personas con diagnóstico de HTA, con evaluación de función renal",%,60.99211621932855,60.61313184528687,-0.3789843740416785,447551.0,447551.0,733785.0,738373.0
+14,"Porcentaje de personas con diagnóstico de DM2, con evaluación de función renal",%,64.34763835382917,64.28973473027196,-0.057903623557209016,229501.0,230723.0,356658.0,358880.0
+15,Porcentaje de personas con diagnóstico de DM y ERC en tratamiento de prevención secundaria de ERC,%,,,,,,,
+16,"Porcentaje de personas con diagnóstico de enfermedad cardio-cerebrovascular (ECV), en tratamiento con antiagregante plaquetario",%,42.640458296105535,42.76076314798544,0.12030485187990791,40566.0,40881.0,95135.0,95604.0
+17,"Porcentaje de personas con diagnóstico de ECV, en tratamiento con estatinas",%,52.66095548431176,52.73105727793816,0.07010179362639946,50099.0,50413.0,95135.0,95604.0
+18,Tasa de egresos hospitalarios por enfermedad cerebrovascular,por 10.000,20.69453943687833,19.9468,-0.7477394368783301,10572.0,10190,5108594.0,5108594
+19,Tasa de egresos hospitalarios por enfermedades isquémicas del corazón,por 10.000,19.921332562344944,18.8369,-1.0844325623449436,10177.0,9623,5108594.0,5108594
+20,Tasa de egresos hospitalarios por insuficiencia cardiaca,por 10.000,12.093347014853794,11.8917,-0.2016470148537941,6178.0,6075,5108594.0,5108594
+21,Tasa de egresos hospitalarios por diabetes mellitus,por 10.000,10.5,10.0517,-0.4482999999999997,,5135,,5108594
+22,Tasa de egresos hospitalarios en personas con diabetes mellitus y amputación del pie diabético de establecimientos pertenecientes al SNSS,por 10.000,7.70466394471747,6.7377,-0.9669639447174694,3936.0,3442,5108594.0,5108594
