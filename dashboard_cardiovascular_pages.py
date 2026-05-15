@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from io import BytesIO
 from pathlib import Path
 
 import pandas as pd
@@ -96,6 +97,13 @@ def clean_multiline(text: object) -> str:
 
 def csv_bytes(df: pd.DataFrame) -> bytes:
     return df.to_csv(index=False).encode("utf-8-sig")
+
+
+def excel_bytes(df: pd.DataFrame) -> bytes:
+    buffer = BytesIO()
+    with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
+        df.to_excel(writer, sheet_name="Indicadores", index=False)
+    return buffer.getvalue()
 
 
 @st.cache_data(show_spinner=False)
@@ -300,8 +308,8 @@ def build_excel_like_table(
         lambda row: format_indicator_value(row["valor_calculado"], row["unidad_calculo"]),
         axis=1,
     )
-    display["N"] = table["numerador_calculado"].map(format_int)
-    display["D"] = table["denominador_calculado"].map(format_int)
+    display["Numerador"] = table["numerador_calculado"].map(format_int)
+    display["Denominador"] = table["denominador_calculado"].map(format_int)
     display["Estado"] = table["estado_calculado"].replace({"calculado": "Calculado", "proxy": "Proxy"}).fillna("")
     display["Disponibilidad"] = table["estado_local"]
     display["Método"] = table["metodo_calculado"].fillna("")
@@ -328,8 +336,8 @@ def build_excel_like_table(
             "denominador": "Denominador",
             "unidad_calculo": "Unidad",
             "valor_calculado": calc_header,
-            "numerador_calculado": "N",
-            "denominador_calculado": "D",
+            "numerador_calculado": "Numerador",
+            "denominador_calculado": "Denominador",
             "estado_calculado": "Estado",
             "estado_local": "Disponibilidad",
             "metodo_calculado": "Método",
@@ -495,19 +503,19 @@ def build_single_indicator_table(
         else:
             wide[f"{year}"] = ""
         if numerator_col in wide.columns:
-            wide[f"N {year}"] = wide[numerator_col].map(format_int)
+            wide[f"Numerador {year}"] = wide[numerator_col].map(format_int)
         else:
-            wide[f"N {year}"] = ""
+            wide[f"Numerador {year}"] = ""
         if denominator_col in wide.columns:
-            wide[f"D {year}"] = wide[denominator_col].map(format_int)
+            wide[f"Denominador {year}"] = wide[denominator_col].map(format_int)
         else:
-            wide[f"D {year}"] = ""
+            wide[f"Denominador {year}"] = ""
         if state_col in wide.columns:
             wide[f"Estado {year}"] = wide[state_col].replace({"calculado": "Calculado", "proxy": "Proxy"}).fillna("")
         else:
             wide[f"Estado {year}"] = ""
 
-    ordered_cols = id_cols + ["2024", "N 2024", "D 2024", "Estado 2024", "2025", "N 2025", "D 2025", "Estado 2025"]
+    ordered_cols = id_cols + ["2024", "Numerador 2024", "Denominador 2024", "Estado 2024", "2025", "Numerador 2025", "Denominador 2025", "Estado 2025"]
     return wide[ordered_cols].sort_values(id_cols).reset_index(drop=True)
 
 
@@ -646,10 +654,10 @@ def render_excel_like_page() -> None:
 
     st.dataframe(display, use_container_width=True, hide_index=True)
     st.download_button(
-        "Descargar resumen RM (CSV)",
-        data=csv_bytes(display),
-        file_name="resumen_indicadores_rm_2024_2025.csv",
-        mime="text/csv",
+        "Descargar resumen RM (Excel)",
+        data=excel_bytes(display),
+        file_name="resumen_indicadores_rm_2024_2025.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
     st.markdown("### Observaciones importantes")
@@ -710,7 +718,7 @@ def render_indicator_table_page() -> None:
     label = indicator_label(indicator_id, indicator_name_lookup.get(indicator_id, indicator_id))
     st.markdown(f"**Indicador:** {label}  \n**Numerador:** {SHORT_NUM.get(indicator_id, '')}  \n**Denominador:** {SHORT_DEN.get(indicator_id, '')}")
 
-    st.caption("**N** = Numerador  |  **D** = Denominador  |  **Estado:** Calculado (directo) · Proxy (aproximación)")
+    st.caption("**Numerador** · **Denominador**  |  **Estado:** Calculado (directo) · Proxy (aproximación)")
     st.dataframe(table, use_container_width=True, hide_index=True)
     st.info(
         "**Proxy:** los indicadores 16 (antiagregante plaquetario) y 17 (estatinas) usan proxy "
@@ -721,10 +729,10 @@ def render_indicator_table_page() -> None:
         "`P4401014+P4401017` (IAM+ACV con estatinas), que corresponden a la fórmula exacta del indicador."
     )
     st.download_button(
-        "Descargar tabla del indicador (CSV)",
-        data=csv_bytes(table),
-        file_name=f"indicador_{indicator_id}_{level}_2024_2025.csv",
-        mime="text/csv",
+        "Descargar tabla del indicador (Excel)",
+        data=excel_bytes(table),
+        file_name=f"indicador_{indicator_id}_{level}_2024_2025.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
 
@@ -812,9 +820,9 @@ def render_egresos_page() -> None:
         table_rows.append({
             "Indicador": indicator_label(iid, names.get(iid, "")),
             "CIE-10": cies.get(iid, ""),
-            "N 2024": format_int(r_2024.iloc[0]["n_egresos"]) if not r_2024.empty else "",
+            "Numerador 2024": format_int(r_2024.iloc[0]["n_egresos"]) if not r_2024.empty else "",
             "Tasa 2024": format_indicator_value(r_2024.iloc[0]["tasa_x10000"], "por 10.000") if not r_2024.empty else "",
-            "N 2025": format_int(r_2025.iloc[0]["n_egresos"]) if not r_2025.empty else "",
+            "Numerador 2025": format_int(r_2025.iloc[0]["n_egresos"]) if not r_2025.empty else "",
             "Tasa 2025": format_indicator_value(r_2025.iloc[0]["tasa_x10000"], "por 10.000") if not r_2025.empty else "",
         })
 
@@ -828,10 +836,10 @@ def render_egresos_page() -> None:
     )
 
     st.download_button(
-        "Descargar tasas de egresos (CSV)",
-        data=csv_bytes(display),
-        file_name=f"tasas_egresos_{level}_2024_2025.csv",
-        mime="text/csv",
+        "Descargar tasas de egresos (Excel)",
+        data=excel_bytes(display),
+        file_name=f"tasas_egresos_{level}_2024_2025.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
 
