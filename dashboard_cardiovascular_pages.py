@@ -88,6 +88,10 @@ def format_indicator_value(raw_value: object, unidad: str = "%") -> str:
     return _locale_decimal(float(numeric), 2) + "%"
 
 
+def format_amplifier(unidad: str) -> str:
+    return "x10.000" if unidad == "por 10.000" else "x100"
+
+
 def clean_multiline(text: object) -> str:
     clean = str(text or "").strip()
     if clean.lower() == "nan":
@@ -607,6 +611,10 @@ def render_excel_like_page() -> None:
 
     rm_2024_vals = data[(data["nivel"] == "rm") & (data["Ano"] == 2024)].set_index("indicador_id")["valor"]
     rm_2025_vals = data[(data["nivel"] == "rm") & (data["Ano"] == 2025)].set_index("indicador_id")["valor"]
+    rm_2024_num = data[(data["nivel"] == "rm") & (data["Ano"] == 2024)].set_index("indicador_id")["numerador"]
+    rm_2024_den = data[(data["nivel"] == "rm") & (data["Ano"] == 2024)].set_index("indicador_id")["denominador"]
+    rm_2025_num = data[(data["nivel"] == "rm") & (data["Ano"] == 2025)].set_index("indicador_id")["numerador"]
+    rm_2025_den = data[(data["nivel"] == "rm") & (data["Ano"] == 2025)].set_index("indicador_id")["denominador"]
 
     rm_2024_unidad = data[(data["nivel"] == "rm") & (data["Ano"] == 2024)].set_index("indicador_id")["unidad"].to_dict()
     rm_2025_unidad = data[(data["nivel"] == "rm") & (data["Ano"] == 2025)].set_index("indicador_id")["unidad"].to_dict()
@@ -614,23 +622,33 @@ def render_excel_like_page() -> None:
     if not egresos.empty:
         eg_2024 = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["tasa_x10000"]
         eg_2025 = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["tasa_x10000"]
+        eg_2024_num = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["n_egresos"]
+        eg_2024_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2024)].set_index("indicador_id")["denominador_piv"]
+        eg_2025_num = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["n_egresos"]
+        eg_2025_den = egresos[(egresos["nivel"] == "rm") & (egresos["Ano"] == 2025)].set_index("indicador_id")["denominador_piv"]
 
     rows: list[dict[str, str]] = []
 
     for iid in rem_ids:
         name = names.get(iid, iid)
+        unidad = rm_2024_unidad.get(iid, rm_2025_unidad.get(iid, "%"))
         rows.append({
             "Indicador": indicator_label(iid, name),
-            "Numerador": SHORT_NUM.get(iid, ""),
-            "Denominador": SHORT_DEN.get(iid, ""),
+            "Numerador base": SHORT_NUM.get(iid, ""),
+            "Denominador base": SHORT_DEN.get(iid, ""),
+            "Amplificador": format_amplifier(unidad),
             "2024": format_indicator_value(
                 rm_2024_vals.get(iid, pd.NA),
-                rm_2024_unidad.get(iid, "%"),
+                unidad,
             ),
             "2025": format_indicator_value(
                 rm_2025_vals.get(iid, pd.NA),
-                rm_2025_unidad.get(iid, "%"),
+                unidad,
             ),
+            "Numerador 2024": format_int(rm_2024_num.get(iid, pd.NA)),
+            "Denominador 2024": format_int(rm_2024_den.get(iid, pd.NA)),
+            "Numerador 2025": format_int(rm_2025_num.get(iid, pd.NA)),
+            "Denominador 2025": format_int(rm_2025_den.get(iid, pd.NA)),
         })
 
     if not egresos.empty:
@@ -638,8 +656,9 @@ def render_excel_like_page() -> None:
             name = names.get(iid, iid)
             rows.append({
                 "Indicador": indicator_label(iid, name),
-                "Numerador": SHORT_NUM.get(iid, ""),
-                "Denominador": SHORT_DEN.get(iid, ""),
+                "Numerador base": SHORT_NUM.get(iid, ""),
+                "Denominador base": SHORT_DEN.get(iid, ""),
+                "Amplificador": format_amplifier("por 10.000"),
                 "2024": format_indicator_value(
                     eg_2024.get(iid, pd.NA) if not egresos.empty else pd.NA,
                     "por 10.000",
@@ -648,6 +667,10 @@ def render_excel_like_page() -> None:
                     eg_2025.get(iid, pd.NA) if not egresos.empty else pd.NA,
                     "por 10.000",
                 ),
+                "Numerador 2024": format_int(eg_2024_num.get(iid, pd.NA)),
+                "Denominador 2024": format_int(eg_2024_den.get(iid, pd.NA)),
+                "Numerador 2025": format_int(eg_2025_num.get(iid, pd.NA)),
+                "Denominador 2025": format_int(eg_2025_den.get(iid, pd.NA)),
             })
 
     display = pd.DataFrame(rows)
