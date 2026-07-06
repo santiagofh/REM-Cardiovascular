@@ -15,10 +15,10 @@ MASTER_PATH = Path(
 )
 SERIE_P_PATHS = {
     2024: Path(
-        r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\REM\REM_2024\Datos\SerieP2024.csv"
+        r"D:\DATA\REM\REM_2024\Datos\SerieP2024.csv"
     ),
     2025: Path(
-        r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\REM\REM_2025\Datos\SerieP2025.csv"
+        r"D:\DATA\REM\REM_2025\Datos\SerieP2025.csv"
     ),
 }
 PIV_ESTABLECIMIENTO_PATH = (

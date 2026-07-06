@@ -5,8 +5,8 @@ Este documento **ignora la carpeta `D`** y se basa solo en la información actua
 ## Insumos locales disponibles hoy
 
 - **REM Serie P cruda disponible:** `2024` y `2025`
-  - `C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\REM\REM_2024\Datos\SerieP2024.csv`
-  - `C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\REM\REM_2025\Datos\SerieP2025.csv`
+  - `D:\DATA\REM\REM_2024\Datos\SerieP2024.csv`
+  - `D:\DATA\REM\REM_2025\Datos\SerieP2025.csv`
 - **Diccionarios P4 disponibles:** `2024` y `2025`
 - **Población inscrita y validada FONASA disponible localmente:**
   - `Inscritos 2022 (Base pago 2023)` -> usable como denominador para año indicador `2023`

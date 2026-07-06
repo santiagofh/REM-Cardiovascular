@@ -1,9 +1,9 @@
 {
-  "generado_en": "2026-05-12T16:30:47.554314",
+  "generado_en": "2026-07-06T09:41:21.059823",
   "alcance": "Indicadores cardiovasculares calculados desde Serie P mes 12 y población inscrita validada APS.",
   "serie_p_fuentes": {
-    "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieP2024.csv",
-    "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieP2025.csv"
+    "2024": "D:\\DATA\\REM\\REM_2024\\Datos\\SerieP2024.csv",
+    "2025": "D:\\DATA\\REM\\REM_2025\\Datos\\SerieP2025.csv"
   },
   "poblacion_fuente": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\REM\\REM-Cardiovascular\\2025\\poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv",
   "maestro_fuente": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",

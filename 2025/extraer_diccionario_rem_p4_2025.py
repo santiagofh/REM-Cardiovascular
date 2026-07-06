@@ -19,7 +19,7 @@ ANIO = "2025"
 REM = "P4"
 DICCIONARIO_DIR = PRODUCTO_ROOT / ANIO
 DICT_PATH = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\REM\REM_2025\Diccionarios\DICCIONARIO CODIGOS SP_25_V1.2.xlsm"
+    r"D:\DATA\REM\REM_2025\Diccionarios\DICCIONARIO CODIGOS SP_25_V1.2.xlsm"
 )
 INDICADORES_PATH = (
     PRODUCTO_ROOT / "Planilla indicadores y fechas reuniones macrozonales 2026.xlsx"
