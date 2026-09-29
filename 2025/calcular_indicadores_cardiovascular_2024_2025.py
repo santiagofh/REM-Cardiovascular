@@ -11,7 +11,7 @@ ROOT = Path(
 )
 OUTPUT_DIR = ROOT / "2025"
 MASTER_PATH = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\ESTABLECIMIENTOS\establecimientos_20260424.csv"
+    r"D:\DATA\ESTABLECIMIENTOS\establecimientos_20260730.csv"
 )
 SERIE_P_PATHS = {
     2024: Path(

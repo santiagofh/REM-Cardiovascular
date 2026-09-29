@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generado_en": "2026-07-06T09:40:42.754881",
-    "maestro_establecimientos": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "generado_en": "2026-09-29T16:26:39.126342",
+    "maestro_establecimientos": "D:\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260730.csv",
     "proyecto": "REM-Cardiovascular",
     "alcance": "Población inscrita y validada de 15 años y más para estimación de coberturas cardiovasculares"
   },
@@ -10,7 +10,7 @@
       "ano_indicador": 2023,
       "ano_inscritos": 2022,
       "base_pago": 2023,
-      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2022 (Base pago 2023)\\T5385_Poblacion_Inscrita_RM.xlsx",
+      "path": "D:\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2022 (Base pago 2023)\\T5385_Poblacion_Inscrita_RM.xlsx",
       "sheets": [
         "Municipales",
         "Otras",
@@ -21,7 +21,7 @@
       "ano_indicador": 2024,
       "ano_inscritos": 2023,
       "base_pago": 2024,
-      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2023 (Base pago 2024)\\Copia de T6603_Inscritos.xlsx",
+      "path": "D:\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2023 (Base pago 2024)\\Copia de T6603_Inscritos.xlsx",
       "sheets": [
         "Respuesta M",
         "Respuesta S"
@@ -31,7 +31,7 @@
       "ano_indicador": 2025,
       "ano_inscritos": 2024,
       "base_pago": 2025,
-      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
+      "path": "D:\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
       "sheets": [
         "Respuesta"
       ]

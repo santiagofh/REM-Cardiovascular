@@ -11,7 +11,7 @@ ROOT = Path(
 )
 OUTPUT_DIR = ROOT / "2025"
 MASTER_PATH = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\ESTABLECIMIENTOS\establecimientos_20260424.csv"
+    r"D:\DATA\ESTABLECIMIENTOS\establecimientos_20260730.csv"
 )
 
 FONASA_SOURCES = {
@@ -19,7 +19,7 @@ FONASA_SOURCES = {
         "ano_inscritos": 2022,
         "base_pago": 2023,
         "path": Path(
-            r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2022 (Base pago 2023)\T5385_Poblacion_Inscrita_RM.xlsx"
+            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2022 (Base pago 2023)\T5385_Poblacion_Inscrita_RM.xlsx"
         ),
         "sheets": ["Municipales", "Otras", "Servicio Salud"],
         "header_row": 5,
@@ -29,7 +29,7 @@ FONASA_SOURCES = {
         "ano_inscritos": 2023,
         "base_pago": 2024,
         "path": Path(
-            r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2023 (Base pago 2024)\Copia de T6603_Inscritos.xlsx"
+            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2023 (Base pago 2024)\Copia de T6603_Inscritos.xlsx"
         ),
         "sheets": ["Respuesta M", "Respuesta S"],
         "header_row": 5,
@@ -39,7 +39,7 @@ FONASA_SOURCES = {
         "ano_inscritos": 2024,
         "base_pago": 2025,
         "path": Path(
-            r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2024 (Base pago 2025)\T8009_Inscritos_RM.xlsx"
+            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2024 (Base pago 2025)\T8009_Inscritos_RM.xlsx"
         ),
         "sheets": ["Respuesta"],
         "header_row": 4,

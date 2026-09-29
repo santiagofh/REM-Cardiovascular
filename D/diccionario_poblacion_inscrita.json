@@ -4,20 +4,20 @@
   "descripcion": "Denominador de poblacion inscrita validada FONASA para indicadores cardiovasculares - Poblacion 15+ años en APS, Región Metropolitana",
   "fuente_fonasa": {
     "2024": {
-      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Población Inscrita\\2024 - Copia de T6603_Inscritos.xlsx",
+      "path": "D:\\DATA\\FONASA\\Población Inscrita\\2024 - Copia de T6603_Inscritos.xlsx",
       "sheets": ["Respuesta M", "Respuesta S"],
       "skiprows": 3,
       "encoding": "latin1"
     },
     "2025": {
-      "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
+      "path": "D:\\DATA\\FONASA\\Poblacion fonasa inscrita x comuna\\INSCRITOS\\Datos FONASA\\Inscritos 2024 (Base pago 2025)\\T8009_Inscritos_RM.xlsx",
       "sheets": ["Respuesta"],
       "skiprows": 3,
       "encoding": "latin1"
     }
   },
   "maestro_establecimientos": {
-    "path": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "path": "D:\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260730.csv",
     "separador": ";",
     "columnas_maestro": [
       "EstablecimientoCodigoAntiguo",

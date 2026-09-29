@@ -10,7 +10,7 @@ PROJECT_DIR = Path(
 )
 EGRESOS_2024_PATH = Path(r"D:\DATA\EGRESOS_HOSPITALARIOS_C\EH_2024.csv")
 BENEF_2024_PATH = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\DATA\FONASA\Poblacion fonasa inscrita x comuna\BENEFICIARIOS\Beneficiarios_RM_2024.xlsx"
+    r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\BENEFICIARIOS\Beneficiarios_RM_2024.xlsx"
 )
 
 USECOLS = [

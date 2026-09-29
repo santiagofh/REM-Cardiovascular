@@ -1,11 +1,11 @@
 ﻿Ano,indicador_id,nombre_indicador,estado_calculo,numerador,denominador,valor_calculado_pct,valor_referencia_2024_rm_proporcion,diferencia_pp
-2024,1,Cobertura de hipertensión arterial (HTA),calculado,738373.0,1272273.06,58.03573330398114,0.5801909816643307,0.016635137548071555
+2024,1,Cobertura de hipertensión arterial (HTA),calculado,738373.0,0.0,,0.5801909816643307,
 2024,2,Control de HTA,calculado,476264.0,738373.0,64.50181683241397,,
-2024,3,Cobertura efectiva (tasa de control poblacional) de HTA,calculado,476264.0,1272273.06,37.434102393082185,0.3737809346663428,0.056008926447901786
+2024,3,Cobertura efectiva (tasa de control poblacional) de HTA,calculado,476264.0,0.0,,0.3737809346663428,
 2024,4,"Porcentaje de personas con diagnóstico de HTA, muy descompensadas",calculado,32167.0,738373.0,4.356470239296399,0.0438370912460734,-0.027238885310940653
-2024,6,Cobertura de diabetes mellitus tipo 2 (DM2),calculado,358880.0,566991.255,63.29550885224853,0.6259096534589285,0.7045435063556837
+2024,6,Cobertura de diabetes mellitus tipo 2 (DM2),calculado,358880.0,0.0,,0.6259096534589285,
 2024,7,Control de DM2,calculado,159840.0,358880.0,44.53856442264824,,
-2024,8,Cobertura efectiva (tasa de control poblacional) de DM2,calculado,159840.0,566991.255,28.190910986801725,0.278830222174095,0.3078887693922283
+2024,8,Cobertura efectiva (tasa de control poblacional) de DM2,calculado,159840.0,0.0,,0.278830222174095,
 2024,9,"Porcentaje de personas con diagnóstico de DM2, muy descompensadas",calculado,69132.0,358880.0,19.263263486402142,0.1928822569520381,-0.024962208801667884
 2024,10,"Porcentaje de personas con diagnóstico de DM2, compensada, usuarias de insulina",calculado,23038.0,108051.0,21.3214130364365,0.2134422659979342,-0.02281356335691953
 2024,11,"Porcentaje de personas con diagnóstico de DM2, con evaluación de pie diabético vigente",calculado,284564.0,358880.0,79.29224253232279,0.7929192671971469,0.00031581260809332434

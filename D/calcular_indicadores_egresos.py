@@ -48,7 +48,7 @@ FILE_NAMES = {
 
 
 def load_maestro():
-    master_path = "C:/Users/fariass/OneDrive - SUBSECRETARIA DE SALUD PUBLICA/Escritorio/DATA/ESTABLECIMIENTOS/establecimientos_20260424.csv"
+    master_path = "D:/DATA/ESTABLECIMIENTOS/establecimientos_20260730.csv"
     master = pd.read_csv(master_path, sep=";", dtype=str,
                          usecols=["ComunaCodigo", "ComunaGlosa",
                                    "SeremiSaludCodigo_ServicioDeSaludCodigo",

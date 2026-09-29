@@ -2,7 +2,7 @@
   "region_objetivo": "13",
   "anio": 2025,
   "input_paths": {
-    "maestro_establecimientos": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260424.csv",
+    "maestro_establecimientos": "D:\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260730.csv",
     "series_a": {
       "2024": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2024\\Datos\\SerieA2024.csv",
       "2025": "C:\\Users\\fariass\\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\\Escritorio\\DATA\\REM\\REM_2025\\Datos\\SerieA2025.csv"
