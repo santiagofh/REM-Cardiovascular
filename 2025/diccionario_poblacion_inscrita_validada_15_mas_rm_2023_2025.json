@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generado_en": "2026-09-30T15:10:12.122437",
+    "generado_en": "2026-10-02T15:07:07.348988",
     "maestro_establecimientos": "D:\\DATA\\ESTABLECIMIENTOS\\establecimientos_20260730.csv",
     "proyecto": "REM-Cardiovascular",
     "alcance": "Población inscrita y validada de 15 años y más para estimación de coberturas cardiovasculares"
@@ -71,7 +71,7 @@
     "IdComuna_master": "Código de comuna según maestro.",
     "comuna_master": "Comuna según maestro.",
     "estado_funcionamiento_master": "Estado de funcionamiento según maestro.",
-    "es_aps": "True si el maestro clasifica el establecimiento como nivel primario.",
+    "es_aps": "True si el maestro clasifica el establecimiento como Primer Nivel (APS).",
     "sin_match_master": "True si el establecimiento no logró homologarse con el maestro."
   },
   "archivos_generados": {

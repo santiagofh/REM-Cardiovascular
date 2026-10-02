@@ -4,8 +4,10 @@ from pathlib import Path
 
 import pandas as pd
 
+from config_rutas import EGRESOS_DIR
+
+
 BASE_DIR = Path(__file__).resolve().parent
-EGRESOS_DIR = Path("D:/DATA/EGRESOS_HOSPITALARIOS_C")
 BENEFICIARIOS_PATH = BASE_DIR / "beneficiarios_fonasa_15_mas_rm_comuna_2024_2025.csv"
 
 REGION_RM = "13"

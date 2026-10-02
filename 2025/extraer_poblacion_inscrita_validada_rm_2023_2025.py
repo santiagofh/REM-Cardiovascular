@@ -5,22 +5,18 @@ from pathlib import Path
 
 import pandas as pd
 
-
-ROOT = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\REM\REM-Cardiovascular"
-)
-OUTPUT_DIR = ROOT / "2025"
-MASTER_PATH = Path(
-    r"D:\DATA\ESTABLECIMIENTOS\establecimientos_20260730.csv"
+from config_rutas import (
+    CSV_ENCODING,
+    DATA_DIR as OUTPUT_DIR,
+    FONASA_INSCRITOS,
+    MASTER_ESTABLECIMIENTOS as MASTER_PATH,
 )
 
 FONASA_SOURCES = {
     2023: {
         "ano_inscritos": 2022,
         "base_pago": 2023,
-        "path": Path(
-            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2022 (Base pago 2023)\T5385_Poblacion_Inscrita_RM.xlsx"
-        ),
+        "path": FONASA_INSCRITOS[2023],
         "sheets": ["Municipales", "Otras", "Servicio Salud"],
         "header_row": 5,
         "layout": "2022_rm",
@@ -28,9 +24,7 @@ FONASA_SOURCES = {
     2024: {
         "ano_inscritos": 2023,
         "base_pago": 2024,
-        "path": Path(
-            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2023 (Base pago 2024)\Copia de T6603_Inscritos.xlsx"
-        ),
+        "path": FONASA_INSCRITOS[2024],
         "sheets": ["Respuesta M", "Respuesta S"],
         "header_row": 5,
         "layout": "2023_nacional",
@@ -38,9 +32,7 @@ FONASA_SOURCES = {
     2025: {
         "ano_inscritos": 2024,
         "base_pago": 2025,
-        "path": Path(
-            r"D:\DATA\FONASA\Poblacion fonasa inscrita x comuna\INSCRITOS\Datos FONASA\Inscritos 2024 (Base pago 2025)\T8009_Inscritos_RM.xlsx"
-        ),
+        "path": FONASA_INSCRITOS[2025],
         "sheets": ["Respuesta"],
         "header_row": 4,
         "layout": "2024_rm",
@@ -53,7 +45,6 @@ DENOMINATOR_CODE_ALIASES = {
 
 PREVALENCIA_HTA = 0.276
 PREVALENCIA_DM2 = 0.123
-CSV_ENCODING = "utf-8-sig"
 
 
 def code_text(series: pd.Series) -> pd.Series:
@@ -102,8 +93,9 @@ def build_master_lookup() -> pd.DataFrame:
     lookup = pd.concat([current_codes, old_codes], ignore_index=True)
     lookup = lookup[lookup["IdEstablecimiento_lookup"].ne("")]
     lookup = lookup.drop_duplicates("IdEstablecimiento_lookup")
+    # El maestro DEIS usa "Primer Nivel"/"Segundo Nivel" (no "Primario").
     lookup["es_aps"] = lookup["NivelAtencionEstabglosa"].fillna("").str.contains(
-        "Primario",
+        "Primer Nivel",
         case=False,
         na=False,
     )
@@ -400,7 +392,7 @@ def write_dictionary(paths: dict[str, Path]) -> None:
             "IdComuna_master": "Código de comuna según maestro.",
             "comuna_master": "Comuna según maestro.",
             "estado_funcionamiento_master": "Estado de funcionamiento según maestro.",
-            "es_aps": "True si el maestro clasifica el establecimiento como nivel primario.",
+            "es_aps": "True si el maestro clasifica el establecimiento como Primer Nivel (APS).",
             "sin_match_master": "True si el establecimiento no logró homologarse con el maestro.",
         },
         "archivos_generados": {name: str(path) for name, path in paths.items()},

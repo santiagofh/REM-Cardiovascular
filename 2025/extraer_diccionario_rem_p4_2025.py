@@ -11,20 +11,17 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 
-
-PRODUCTO_ROOT = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\REM\REM-Cardiovascular"
+from config_rutas import (
+    CSV_ENCODING,
+    DATA_DIR as DICCIONARIO_DIR,
+    DICCIONARIO_SP_2025 as DICT_PATH,
+    PLANILLA_INDICADORES as INDICADORES_PATH,
+    REPO_ROOT as PRODUCTO_ROOT,
 )
+
+
 ANIO = "2025"
 REM = "P4"
-DICCIONARIO_DIR = PRODUCTO_ROOT / ANIO
-DICT_PATH = Path(
-    r"D:\DATA\REM\REM_2025\Diccionarios\DICCIONARIO CODIGOS SP_25_V1.2.xlsm"
-)
-INDICADORES_PATH = (
-    PRODUCTO_ROOT / "Planilla indicadores y fechas reuniones macrozonales 2026.xlsx"
-)
-CSV_ENCODING = "utf-8-sig"
 
 
 INDICADORES_REM_P4 = [

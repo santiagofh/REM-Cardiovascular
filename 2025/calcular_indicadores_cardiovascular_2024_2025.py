@@ -5,27 +5,16 @@ from pathlib import Path
 
 import pandas as pd
 
-
-ROOT = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\REM\REM-Cardiovascular"
+from config_rutas import (
+    CSV_ENCODING,
+    DATA_DIR as OUTPUT_DIR,
+    MASTER_ESTABLECIMIENTOS as MASTER_PATH,
+    SERIE_P as SERIE_P_PATHS,
 )
-OUTPUT_DIR = ROOT / "2025"
-MASTER_PATH = Path(
-    r"D:\DATA\ESTABLECIMIENTOS\establecimientos_20260730.csv"
-)
-SERIE_P_PATHS = {
-    2024: Path(
-        r"D:\DATA\REM\REM_2024\Datos\SerieP2024.csv"
-    ),
-    2025: Path(
-        r"D:\DATA\REM\REM_2025\Datos\SerieP2025.csv"
-    ),
-}
 PIV_ESTABLECIMIENTO_PATH = (
     OUTPUT_DIR / "poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv"
 )
 PANEL_REFERENCIA_PATH = OUTPUT_DIR / "indicadores_cardiovascular_panel_2026.csv"
-CSV_ENCODING = "utf-8-sig"
 
 GEO_COLUMNS = [
     "Ano",
@@ -34,6 +23,25 @@ GEO_COLUMNS = [
     "IdComuna",
     "comuna",
     "IdEstablecimiento",
+    "establecimiento",
+    "tipo_establecimiento",
+    "dependencia",
+    "nivel_atencion",
+    "estado_funcionamiento",
+    "es_aps",
+]
+
+# Claves estables de cruce: solo IDs. Los nombres (servicio_salud, comuna,
+# establecimiento, etc.) y el flag es_aps pueden diferir entre REM y PIV según
+# el maestro usado en cada pipeline, por lo que NO se usan como claves de join.
+# Antes el join en las 12 columnas dejaba numerador y denominador en filas
+# distintas y las coberturas con denominador PIV (1,3,6,8) quedaban con
+# denominador 0 y calculable=False.
+MERGE_KEYS = ["Ano", "IdServicio", "IdComuna", "IdEstablecimiento"]
+
+GEO_NAME_COLUMNS = [
+    "servicio_salud",
+    "comuna",
     "establecimiento",
     "tipo_establecimiento",
     "dependencia",
@@ -314,8 +322,9 @@ def load_master_lookup() -> pd.DataFrame:
     lookup = pd.concat([current_codes, old_codes], ignore_index=True)
     lookup = lookup[lookup["IdEstablecimiento_lookup"].ne("")]
     lookup = lookup.drop_duplicates("IdEstablecimiento_lookup")
+    # El maestro DEIS usa "Primer Nivel"/"Segundo Nivel" (no "Primario").
     lookup["es_aps"] = lookup["NivelAtencionEstabglosa"].fillna("").str.contains(
-        "Primario",
+        "Primer Nivel",
         case=False,
         na=False,
     )
@@ -459,15 +468,32 @@ def aggregate_codes(
     value_name: str,
 ) -> pd.DataFrame:
     if not codes:
-        return pd.DataFrame(columns=GEO_COLUMNS + [value_name])
+        return pd.DataFrame(columns=MERGE_KEYS + [value_name])
     subset = df[df[code_column].isin(codes)].copy()
     if subset.empty:
-        return pd.DataFrame(columns=GEO_COLUMNS + [value_name])
+        return pd.DataFrame(columns=MERGE_KEYS + [value_name])
     return (
-        subset.groupby(GEO_COLUMNS, dropna=False, as_index=False)["valor_col01"]
+        subset.groupby(MERGE_KEYS, dropna=False, as_index=False)["valor_col01"]
         .sum()
         .rename(columns={"valor_col01": value_name})
     )
+
+
+def coalesce_geo(*frames: pd.DataFrame) -> pd.DataFrame:
+    """Nombres geográficos por MERGE_KEYS prefiriendo el primer frame con dato.
+
+    El primer frame debe ser el REM (maestro vigente en este cálculo); los
+    siguientes (PIV) solo rellenan huecos de establecimientos sin reporte REM.
+    """
+    parts = []
+    for frame in frames:
+        cols = [c for c in MERGE_KEYS + GEO_NAME_COLUMNS if c in frame.columns]
+        if cols:
+            parts.append(frame[cols])
+    if not parts:
+        return pd.DataFrame(columns=MERGE_KEYS + GEO_NAME_COLUMNS)
+    stacked = pd.concat(parts, ignore_index=True).replace("", pd.NA)
+    return stacked.groupby(MERGE_KEYS, dropna=False, as_index=False).first()
 
 
 def resolve_definition(definition: dict[str, object], year: int) -> dict[str, object] | None:
@@ -504,7 +530,7 @@ def resolve_definition(definition: dict[str, object], year: int) -> dict[str, ob
 def build_piv_base(pop: pd.DataFrame, year: int, denominator_column: str) -> pd.DataFrame:
     subset = pop[pop["Ano"].eq(year)].copy()
     subset = subset[
-        GEO_COLUMNS + [denominator_column]
+        MERGE_KEYS + [denominator_column]
     ].rename(columns={denominator_column: "denominador"})
     subset["denominador"] = pd.to_numeric(subset["denominador"], errors="coerce").fillna(0)
     subset["denominador_directo"] = subset["denominador"].gt(0)
@@ -525,6 +551,7 @@ def build_rem_indicator_base(
     )
     numerator_df["rem_reporta"] = numerator_df["numerador"].gt(0)
 
+    pop_year = pop[pop["Ano"].eq(year)].copy()
     if definition["denominator_kind"] == "rem":
         denominator_df = aggregate_codes(
             rem_year,
@@ -532,27 +559,28 @@ def build_rem_indicator_base(
             definition["denominator_codes"],
             "denominador",
         )
-        base = numerator_df.merge(denominator_df, on=GEO_COLUMNS, how="outer")
-        base["numerador"] = pd.to_numeric(base["numerador"], errors="coerce").fillna(0)
-        base["denominador"] = pd.to_numeric(base["denominador"], errors="coerce").fillna(0)
-        base["rem_reporta"] = base["rem_reporta"].fillna(base["numerador"].gt(0))
-        base["denominador_directo"] = base["denominador"].gt(0)
+        geo = coalesce_geo(rem_year)
     elif definition["denominator_kind"] == "piv_hta_aps":
         denominator_df = build_piv_base(pop, year, "poblacion_estimada_hta_15_mas")
-        base = numerator_df.merge(denominator_df, on=GEO_COLUMNS, how="outer")
-        base["numerador"] = pd.to_numeric(base["numerador"], errors="coerce").fillna(0)
-        base["denominador"] = pd.to_numeric(base["denominador"], errors="coerce").fillna(0)
-        base["rem_reporta"] = base["rem_reporta"].fillna(base["numerador"].gt(0))
-        base["denominador_directo"] = base["denominador_directo"].fillna(base["denominador"].gt(0))
+        geo = coalesce_geo(rem_year, pop_year)
     elif definition["denominator_kind"] == "piv_dm2_aps":
         denominator_df = build_piv_base(pop, year, "poblacion_estimada_dm2_15_mas")
-        base = numerator_df.merge(denominator_df, on=GEO_COLUMNS, how="outer")
-        base["numerador"] = pd.to_numeric(base["numerador"], errors="coerce").fillna(0)
-        base["denominador"] = pd.to_numeric(base["denominador"], errors="coerce").fillna(0)
-        base["rem_reporta"] = base["rem_reporta"].fillna(base["numerador"].gt(0))
-        base["denominador_directo"] = base["denominador_directo"].fillna(base["denominador"].gt(0))
+        geo = coalesce_geo(rem_year, pop_year)
     else:
         raise ValueError(f"Tipo de denominador no soportado: {definition['denominator_kind']}")
+
+    base = numerator_df.merge(denominator_df, on=MERGE_KEYS, how="outer")
+    base = base.merge(geo, on=MERGE_KEYS, how="left")
+    base["numerador"] = pd.to_numeric(base["numerador"], errors="coerce").fillna(0)
+    base["denominador"] = pd.to_numeric(base["denominador"], errors="coerce").fillna(0)
+    base["rem_reporta"] = base["rem_reporta"].fillna(base["numerador"].gt(0))
+    if "denominador_directo" in base.columns:
+        base["denominador_directo"] = base["denominador_directo"].fillna(
+            base["denominador"].gt(0)
+        )
+    else:
+        # Rama con denominador REM: el denominador existe donde se reportó.
+        base["denominador_directo"] = base["denominador"].gt(0)
 
     base["Ano"] = pd.to_numeric(base["Ano"], errors="coerce").astype("Int64")
     base["indicador_id"] = definition["indicador_id"]
@@ -656,7 +684,13 @@ def build_indicator_catalog() -> pd.DataFrame:
                 "metodo_base": definition["metodo"],
             }
         )
-    return pd.DataFrame(rows).sort_values("indicador_id")
+    catalog = pd.DataFrame(rows)
+    # Orden natural: 1,2,...,10,11,12b,13... (no lexicográfico 1,10,11,12b,13).
+    catalog["orden_num"] = catalog["indicador_id"].str.extract(r"(\d+)").astype(int)
+    catalog["orden_suf"] = catalog["indicador_id"].str.extract(r"(\D+)$").fillna("")
+    return catalog.sort_values(["orden_num", "orden_suf"]).drop(
+        columns=["orden_num", "orden_suf"]
+    )
 
 
 def main() -> None:

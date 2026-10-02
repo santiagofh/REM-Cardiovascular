@@ -6,11 +6,10 @@ from pathlib import Path
 
 import pandas as pd
 
+from config_rutas import BENEFICIARIOS_DIR
+
 
 BASE_DIR = Path(__file__).resolve().parent
-BENEFICIARIOS_DIR = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\SEREMIRM - Estadistica\A Estadisticas Sanitarias y Demograficas\POBLACIONES\BENEFICIARIOS\Datos FONASA"
-)
 LOOKUP_PATH = BASE_DIR / "poblacion_inscrita_validada_15_mas_rm_establecimiento_2023_2025.csv"
 
 OUTPUT_COMUNA = BASE_DIR / "beneficiarios_fonasa_15_mas_rm_comuna_2024_2025.csv"

@@ -6,15 +6,14 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
+from config_rutas import DATA_DIR, PLANILLA_INDICADORES as TEMPLATE_PATH, REPO_ROOT
 
-ROOT = Path(
-    r"C:\Users\fariass\OneDrive - SUBSECRETARIA DE SALUD PUBLICA\Escritorio\REM\REM-Cardiovascular"
-)
-DATA_DIR = ROOT / "2025"
-TEMPLATE_PATH = ROOT / "Planilla indicadores y fechas reuniones macrozonales 2026.xlsx"
+
 RM_PATH = DATA_DIR / "indicadores_cardiovascular_rm_2024_2025.csv"
 EGRESOS_PATH = DATA_DIR / "egresos_hospitalarios_factibilidad_resumen_2020_2024.csv"
-OUTPUT_PATH = ROOT / "Planilla indicadores calculados RM 2024-2025.xlsx"
+# Salida del cálculo vigente de egresos (F). Tiene prioridad sobre EGRESOS_PATH.
+EGRESOS_CALC_PATH = DATA_DIR / "indicadores_egresos_rm_2024_2025.csv"
+OUTPUT_PATH = REPO_ROOT / "Planilla indicadores calculados RM 2024-2025.xlsx"
 
 YELLOW_FILL = PatternFill(fill_type="solid", fgColor="FFF2CC")
 GREEN_FILL = PatternFill(fill_type="solid", fgColor="E2F0D9")
@@ -78,6 +77,31 @@ def build_rm_lookup() -> dict[tuple[str, int], dict[str, object]]:
 
 
 def build_egresos_lookup() -> dict[tuple[str, int], dict[str, object]]:
+    """Tasas RM 18-22 desde la salida del cálculo vigente (F).
+
+    Retorna {(indicador, ano): conteo, denominador, tasa, estado}.
+    Si no existe, usa el CSV manual de factibilidad como respaldo (conteo 2024).
+    """
+    if EGRESOS_CALC_PATH.exists():
+        eg = pd.read_csv(EGRESOS_CALC_PATH, dtype=str)
+        eg = eg[eg["nivel"].eq("rm")].copy()
+        lookup: dict[tuple[str, int], dict[str, object]] = {}
+        for _, row in eg.iterrows():
+            indicator = str(row["indicador_id"]).strip()
+            if indicator not in {"18", "19", "20", "21", "22"}:
+                continue
+            lookup[(indicator, int(row["Ano"]))] = {
+                "conteo": format_count(row["n_egresos"]),
+                "denominador": format_count(row["denominador_fonasa_15_mas"]),
+                "tasa": pd.to_numeric(row["tasa_x10000"], errors="coerce"),
+                "estado": "Calculado",
+            }
+        if lookup:
+            return lookup
+    return _build_egresos_lookup_manual()
+
+
+def _build_egresos_lookup_manual() -> dict[tuple[str, int], dict[str, object]]:
     if not EGRESOS_PATH.exists():
         return {}
     eg = pd.read_csv(EGRESOS_PATH, dtype={"indicador": str})
@@ -139,10 +163,14 @@ def main() -> None:
         v2025 = rm_lookup.get((indicator_id, 2025))
 
         # Use main year columns of the template for calculated values.
-        ws.cell(row, 11).value = None if v2024 is None else v2024["valor"]
-        ws.cell(row, 12).value = None if v2025 is None else v2025["valor"]
-        ws.cell(row, 11).number_format = "0.0%" if v2024 is not None else ws.cell(row, 11).number_format
-        ws.cell(row, 12).number_format = "0.0%" if v2025 is not None else ws.cell(row, 12).number_format
+        # Se preservan los valores de la plantilla cuando no hay cálculo local
+        # (p. ej. egresos 18-22, 12a) en vez de borrarlos.
+        if v2024 is not None:
+            ws.cell(row, 11).value = v2024["valor"]
+            ws.cell(row, 11).number_format = "0.0%"
+        if v2025 is not None:
+            ws.cell(row, 12).value = v2025["valor"]
+            ws.cell(row, 12).number_format = "0.0%"
 
         ws.cell(row, 23).value = None if v2024 is None else v2024["valor"]
         ws.cell(row, 24).value = None if v2024 is None else v2024["numerador"]
@@ -162,21 +190,40 @@ def main() -> None:
         note = ""
         if indicator_id == "12a":
             note = "No calculado localmente: la planilla usa una logica de tamizaje RD distinta a fondo de ojo."
-        elif indicator_id in {"18", "19", "20", "21"}:
-            count_2024 = egresos_lookup.get((indicator_id, 2024))
-            if count_2024 is not None:
-                ws.cell(row, 24).value = count_2024["conteo"]
-                ws.cell(row, 29).value = "Conteo 2024"
+        elif indicator_id in {"18", "19", "20", "21", "22"}:
+            escrito_con_tasa = False
+            for entry, col_v, col_n, col_d, col_e in (
+                (egresos_lookup.get((indicator_id, 2024)), 23, 24, 25, 29),
+                (egresos_lookup.get((indicator_id, 2025)), 26, 27, 28, 30),
+            ):
+                if entry is None:
+                    continue
+                ws.cell(row, col_n).value = entry.get("conteo")
+                ws.cell(row, col_d).value = entry.get("denominador")
+                tasa = entry.get("tasa")
+                if tasa is not None and not pd.isna(tasa):
+                    ws.cell(row, col_v).value = float(tasa)
+                    ws.cell(row, col_v).number_format = "0.00"
+                    escrito_con_tasa = True
+                ws.cell(row, col_e).value = entry.get("estado", "")
+            if not escrito_con_tasa:
+                if egresos_lookup.get((indicator_id, 2024)) is None and egresos_lookup.get(
+                    (indicator_id, 2025)
+                ) is None:
+                    note = "Sin base local suficiente para tasa."
+                else:
+                    note = "Solo conteo disponible (respaldo manual, sin tasa)."
+            elif indicator_id == "22":
                 note = (
-                    "El archivo local permite contar egresos FONASA 15+ RM 2024, "
-                    "pero no calcular la tasa exacta porque aqui no esta el denominador oficial de beneficiarios FONASA 15+."
+                    "Tasa por 10.000 beneficiarios FONASA 15+. Definición de "
+                    "amputación en revisión: contrastar con planilla "
+                    "(ver indicador 22/README.md)."
                 )
             else:
-                note = "Sin base local suficiente para tasa."
-        elif indicator_id == "22":
-            note = (
-                "No calculado: el CSV local de egresos no trae procedimiento/intervencion para identificar amputacion de pie diabetico."
-            )
+                note = (
+                    "Tasa por 10.000 beneficiarios FONASA 15+ calculada "
+                    "localmente (ver indicadores_egresos_rm_2024_2025.csv)."
+                )
         elif indicator_id in {"16", "17"} and v2024 is not None and str(v2024["estado"]).lower() == "proxy":
             note = "2024 usa proxy con codigo consolidado historico."
 
