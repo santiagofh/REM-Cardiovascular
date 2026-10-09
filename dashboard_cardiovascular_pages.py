@@ -605,10 +605,13 @@ def render_excel_like_page() -> None:
     data = load_dashboard_data()
     egresos = load_egresos_data()
 
+    st.warning("Datos Provisorios")
+
     st.title("Indicadores cardiovasculares RM")
     st.caption(
         "Indicadores calculados para la Región Metropolitana desde fuentes REM, FONASA y DEIS."
     )
+    st.caption("Los datos son provisorios y están sujetos a la fecha de corte del REM.")
 
     rem_ids = sorted(data["indicador_id"].unique(), key=indicator_sort_key)
     names = (
